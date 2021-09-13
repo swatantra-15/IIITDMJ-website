@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    color: white;
+}
+
+/* First view of website */
+
+.navbar {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/College.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* top navbar */
+
+.top-navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.top-navbar ul {
+    overflow: auto;
+}
+
+.top-navbar li a {
+    float: left;
+    font-size: 1rem;
+    padding: 0 3% 0 2%;
+}
+
+.top-navbar li a:hover{
+    color: aqua;
+    transition-delay: 20ms;
+}
+.top-navbar li button {
+    float: right;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+.top-navbar li button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+/* Top navigation bar end */
+
+/* the dropdown option */
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 8vw;
+    color: white;
+    float: right;
+    padding-right: 20px;
+    padding-left: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* drop down button end */
+
+/* main navigation bar */
+
+.mainflexnav {
+    position: relative;
+}
+
+.mainnav a img {
+    float: left;
+    height: 15vh;
+    padding: 20px;
+}
+
+.Navigation-bar ul {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    float: right;
+}
+
+.Navigation-bar ul li {
+    float: left;
+    padding: 15px;
+}
+
+.Navigation-bar ul li a {
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Navigation-bar ul li a:hover {
+    color: cadetblue;
+    text-decoration: underline;
+    transition-delay: 20ms;
+}
+
+/* main navigation bar end */
+
+div.tour {
+    height: 10vh;
+    width: 30vw;
+    position: absolute;
+    background-color: rgb(123, 186, 123);
+    top: 60%;
+    left: 20%;
+}
+
+div.tour span {
+    color: bisque;
+    font-size: 3vw;
+}
+
+div.V-tour {
+    background-color: aqua;
+    position: relative;
+    top: 33%;
+    left: 70%;
+    transform: translate(-40%, -50%);
+    width: 60%;
+    height: 50%;
+    text-align: center;
+    font-size: 2vw;
+}
+
+div.V-tour a {
+    color: blue;
+}
+
+/* media query for navbar */
+
+@media screen and (max-width: 900px) {
+    .checkbtn {
+        position: relative;
+        top: 25px;
+        display: inline;
+    }
+    .top-navbar ul li a, button {
+        display: none;
+    }
+    div.tour span {
+        font-size: 4vw;
+    }
+    div.V-tour {
+        width: 80%;
+        font-size: 3vw;
+    }
+    .mainnav a img {
+        height: 12vw;
+    }
+    .Navigation-bar {
+        display: none;
+    }
+}
+
+/* first view of website end */
+
+.features {
+    text-align: center;
+}
+
+.features h4 {
+    color: rgb(68, 64, 60);
+}
