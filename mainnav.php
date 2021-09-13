@@ -12,7 +12,11 @@
     </div>
     <div class="Navigation-bar">
         <ul>
-            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a>
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </li>
             <li><a href="#">DEPARTMENTS</a></li>
             <li><a href="#">FACULTY</a></li>
             <li><a href="#">DEANS</a></li>
