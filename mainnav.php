@@ -4,11 +4,7 @@
         <i class="fas fa-bars"></i>
     </label>
     <div class="mainnav">
-        <ul>
-            <li>
-                <a href="index.php"><img src="stylesheets/images/iiitdmjlogo2.png" alt="PDPM"></a>
-            </li>
-        </ul>
+        <a href="index.php"><img src="stylesheets/images/iiitdmjlogo2.png" alt="PDPM"></a>
     </div>
     <div class="Navigation-bar">
         <ul>
