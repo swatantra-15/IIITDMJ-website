@@ -37,10 +37,11 @@ a {
     padding: 0 3% 0 2%;
 }
 
-.top-navbar li a:hover{
+.top-navbar li a:hover {
     color: aqua;
     transition-delay: 20ms;
 }
+
 .top-navbar li button {
     float: right;
     background-color: aqua;
@@ -86,14 +87,16 @@ a {
 
 .Navigation-bar ul {
     position: absolute;
-    top: 2rem;
+    top: 2.2rem;
     right: 1rem;
     float: right;
 }
 
 .Navigation-bar ul li {
-    float: left;
-    padding: 15px;
+    position: relative;
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 23px;
 }
 
 .Navigation-bar ul li a {
@@ -102,11 +105,25 @@ a {
 }
 
 .Navigation-bar ul li a:hover {
-    color: cadetblue;
-    text-decoration: underline;
+    color: rgb(106, 234, 236);
     transition-delay: 20ms;
 }
 
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: lightslategray;
+    min-width: max-content;
+    line-height: 2;
+    z-index: 1;
+}
+.dropdown a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Navigation-bar ul li:hover .dropdown {
+    display: grid;
+}
 /* main navigation bar end */
 
 div.tour {
@@ -120,7 +137,7 @@ div.tour {
 
 div.tour span {
     color: bisque;
-    font-size: 3vw;
+    font-size: clamp(1rem,3vw,3rem);
 }
 
 div.V-tour {
@@ -132,7 +149,7 @@ div.V-tour {
     width: 60%;
     height: 58%;
     text-align: center;
-    font-size: 2vw;
+    font-size: clamp(0.5rem,2vw,2.2rem);
 }
 
 div.V-tour a {
@@ -150,12 +167,8 @@ div.V-tour a {
     .top-navbar ul li a, button {
         display: none;
     }
-    div.tour span {
-        font-size: 4vw;
-    }
     div.V-tour {
         width: 80%;
-        font-size: 3vw;
     }
     .mainnav a img {
         height: 12vw;
