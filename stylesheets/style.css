@@ -117,6 +117,7 @@ a {
     line-height: 2;
     z-index: 1;
 }
+
 .dropdown a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -124,6 +125,7 @@ a {
 .Navigation-bar ul li:hover .dropdown {
     display: grid;
 }
+
 /* main navigation bar end */
 
 div.tour {
@@ -137,7 +139,7 @@ div.tour {
 
 div.tour span {
     color: bisque;
-    font-size: clamp(1rem,3vw,3rem);
+    font-size: clamp(1rem, 3vw, 3rem);
 }
 
 div.V-tour {
@@ -149,7 +151,7 @@ div.V-tour {
     width: 60%;
     height: 58%;
     text-align: center;
-    font-size: clamp(0.5rem,2vw,2.2rem);
+    font-size: clamp(0.5rem, 2vw, 2.2rem);
 }
 
 div.V-tour a {
@@ -186,4 +188,14 @@ div.V-tour a {
 
 .features h4 {
     color: rgb(68, 64, 60);
+}
+
+footer {
+    text-align: center;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+footer a:hover{
+    color: aqua;
 }

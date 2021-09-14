@@ -8,6 +8,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>IIITDM Jabalpur</title>
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 
 <body>
@@ -26,6 +27,7 @@
         <h2>IIITDMJ FEATURES</h2>
         <h4>TAKE A DEEP INSIGHT</h4>
     </div>
+    <?php include 'footer.php';?>
 </body>
 
 </html>
