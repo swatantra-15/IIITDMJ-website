@@ -1,8 +1,8 @@
+<input type="checkbox" id="click">
+<label for="click" class="checkbtn">
+    <i class="fas fa-bars"></i>
+</label>
 <div class="mainflexnav">
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-    </label>
     <div class="mainnav">
         <a href="index.php"><img src="stylesheets/images/iiitdmjlogo2.png" alt="PDPM"></a>
     </div>
@@ -13,6 +13,7 @@
                 <div class="dropdown">
                     <a href="about.php">About</a>
                     <a href="#">General Administraion</a>
+                    <a href="#">Placement Cell</a>
                 </div>
             </li>
             <li>
@@ -20,7 +21,7 @@
                 <div class="dropdown">
                     <a href="#">Computer Science & Engineering(CSE)</a>
                     <a href="#">Electronics & Communication Engineering(ECE)</a>
-                    <a href="#">Design(DES)</a>
+                    <a href="#">Design(Des)</a>
                     <a href="#">Mechanical Engineering(ME)</a>
                     <a href="#">Natural Sciences(NS)</a>
                 </div>
@@ -41,7 +42,7 @@
                     <a href="#">Activities</a>
                 </div>
             </li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ACADEMICS</a></li>
         </ul>
     </div>
 </div>

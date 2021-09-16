@@ -34,7 +34,7 @@ a {
 .top-navbar li a {
     float: left;
     font-size: 1rem;
-    padding: 0 3% 0 2%;
+    padding: 0 2% 0 2%;
 }
 
 .top-navbar li a:hover {
@@ -65,9 +65,13 @@ a {
     font-size: 8vw;
     color: white;
     float: right;
-    padding-right: 20px;
-    padding-left: 5px;
+    padding: 20px;
+    padding-bottom: 0;
     cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
     display: none;
 }
 
@@ -83,6 +87,7 @@ a {
     float: left;
     height: 15vh;
     padding: 20px;
+    padding-bottom: 0;
 }
 
 .Navigation-bar ul {
@@ -95,13 +100,9 @@ a {
 .Navigation-bar ul li {
     position: relative;
     display: inline-block;
-    padding-top: 20px;
-    padding-right: 23px;
-}
-
-.Navigation-bar ul li a {
-    font-size: 1.3rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: clamp(1rem,1.5vw,4rem);
 }
 
 .Navigation-bar ul li a:hover {
@@ -128,7 +129,7 @@ a {
 
 /* main navigation bar end */
 
-div.tour {
+.tour {
     height: 10vh;
     width: 30vw;
     position: absolute;
@@ -137,12 +138,12 @@ div.tour {
     left: 20%;
 }
 
-div.tour span {
+.tour span {
     color: bisque;
     font-size: clamp(1rem, 3vw, 3rem);
 }
 
-div.V-tour {
+.V-tour {
     background-color: aqua;
     position: relative;
     top: 33%;
@@ -160,22 +161,48 @@ div.V-tour a {
 
 /* media query for navbar */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
     .checkbtn {
         position: relative;
-        top: 25px;
         display: inline;
     }
     .top-navbar ul li a, button {
         display: none;
     }
-    div.V-tour {
+    .V-tour {
         width: 80%;
     }
     .mainnav a img {
         height: 12vw;
     }
-    .Navigation-bar {
+    .Navigation-bar ul {
+        height: 88vh;
+        width: 100vw;
+        background-color: gray;
+        position: relative;
+        top: 0;
+        right: 100%;
+        transition: all .5s;
+    }
+    .Navigation-bar ul li {
+        width: max-content;
+        position: relative;
+        padding: 0;
+        margin: auto;
+        display: block;
+        text-align: center;
+        line-height: 3;
+    }
+    .Navigation-bar ul li:hover .dropdown {
+        width: 100vw;
+        position: relative;
+        display: grid;
+        overflow: auto;
+    }
+    #click:checked~.mainflexnav .Navigation-bar ul {
+        right: 0;
+    }
+    #click:checked~.tour {
         display: none;
     }
 }
@@ -196,6 +223,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
-footer a:hover{
+
+footer a:hover {
     color: aqua;
 }
