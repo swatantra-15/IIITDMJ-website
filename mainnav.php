@@ -43,6 +43,8 @@
                 </div>
             </li>
             <li><a href="#">ACADEMICS</a></li>
+            <li><a href="#">RESEARCH</a></li>
+            <li><a href="login.html"><span>LOGIN</span></a></li>
         </ul>
     </div>
 </div>

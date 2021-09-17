@@ -1,7 +1,6 @@
 <header>
     <nav class="top-navbar">
         <ul>
-            
             <li><a href="#">PLACEMENT</a></li>
             <li><a href="Downloads/Ordinances.pdf" target="_blank">ORDINANCES</a></li>
             <li><a href="#">JOB</a></li>

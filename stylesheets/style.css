@@ -34,7 +34,7 @@ a {
 .top-navbar li a {
     float: left;
     font-size: 1rem;
-    padding: 0 2% 0 2%;
+    padding: 0 1.6%;
 }
 
 .top-navbar li a:hover {
@@ -75,34 +75,49 @@ input[type="checkbox"] {
     display: none;
 }
 
-/* drop down button end */
+/* 
+drop down button end 
+*/
 
-/* main navigation bar */
+/* 
+main navigation bar 
+*/
 
 .mainflexnav {
     position: relative;
 }
 
+/* Image */
+
 .mainnav a img {
     float: left;
-    height: 15vh;
+    max-width: 18%;
+    height: auto;
     padding: 20px;
     padding-bottom: 0;
 }
 
+/* navigation bar at the right */
+
 .Navigation-bar ul {
     position: absolute;
-    top: 2.2rem;
-    right: 1rem;
+    top: 2rem;
+    right: 0;
     float: right;
 }
 
 .Navigation-bar ul li {
     position: relative;
     display: inline-block;
-    padding: 20px 15px;
+    padding: 20px 11px;
     font-family: 'Ubuntu', sans-serif;
-    font-size: clamp(1rem,1.5vw,4rem);
+    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+}
+
+/* Not displayed login at full page */
+
+.Navigation-bar ul li span {
+    display: none;
 }
 
 .Navigation-bar ul li a:hover {
@@ -129,9 +144,13 @@ input[type="checkbox"] {
 
 /* main navigation bar end */
 
+/* 
+Tour button in the middle of the bgimage
+*/
+
 .tour {
-    height: 10vh;
-    width: 30vw;
+    width: 30%;
+    height: auto;
     position: absolute;
     background-color: rgb(123, 186, 123);
     top: 60%;
@@ -149,8 +168,8 @@ input[type="checkbox"] {
     top: 33%;
     left: 70%;
     transform: translate(-40%, -50%);
-    width: 60%;
-    height: 58%;
+    max-width: 60%;
+    height: auto;
     text-align: center;
     font-size: clamp(0.5rem, 2vw, 2.2rem);
 }
@@ -159,9 +178,13 @@ div.V-tour a {
     color: blue;
 }
 
-/* media query for navbar */
+/* tour button end */
 
-@media screen and (max-width: 850px) {
+/* 
+media query for navbar 
+*/
+
+@media screen and (max-width: 900px) {
     .checkbtn {
         position: relative;
         display: inline;
@@ -176,7 +199,7 @@ div.V-tour a {
         height: 12vw;
     }
     .Navigation-bar ul {
-        height: 88vh;
+        height: max-content;
         width: 100vw;
         background-color: gray;
         position: relative;
@@ -187,11 +210,13 @@ div.V-tour a {
     .Navigation-bar ul li {
         width: max-content;
         position: relative;
-        padding: 0;
+        padding: 20px 0;
         margin: auto;
         display: block;
         text-align: center;
-        line-height: 3;
+    }
+    .Navigation-bar ul li span {
+        display: block;
     }
     .Navigation-bar ul li:hover .dropdown {
         width: 100vw;
