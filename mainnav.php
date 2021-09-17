@@ -32,6 +32,7 @@
                     <a href="#">Faculty</a>
                     <a href="#">Deans</a>
                     <a href="#">Research Staff</a>
+                    <a href="#">Staff</a>
                 </div>
             </li>
             <li>

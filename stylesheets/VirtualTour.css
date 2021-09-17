@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main {
+    background-image: url(images/virtualtour.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: clamp(20px, 5vw, 40px);
+}
+
+h3 {
+    color: aquamarine;
+    font-size: clamp(10px, 2.5vw, 20px);
+}
+
+a:hover {
+    color: bisque;
+}
