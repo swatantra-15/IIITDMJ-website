@@ -31,7 +31,7 @@ a {
     overflow: auto;
 }
 
-.top-navbar li a {
+.top-navbar li a{
     float: left;
     font-size: 1rem;
     padding: 0 1.6%;
@@ -43,14 +43,10 @@ a {
 }
 
 .top-navbar li button {
-    float: right;
-    background-color: aqua;
-    border-radius: 20px;
-}
-
-.top-navbar li button:hover {
-    background-color: red;
     cursor: pointer;
+    float: right;
+    background-color: blanchedalmond;
+    font-size: 14px;
 }
 
 /* Top navigation bar end */
@@ -189,7 +185,7 @@ media query for navbar
         position: relative;
         display: inline;
     }
-    .top-navbar ul li a, button {
+    .top-navbar {
         display: none;
     }
     .V-tour {
