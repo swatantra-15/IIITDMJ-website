@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .slideshow {
   position: absolute;
   width: 100vw;
@@ -330,7 +334,7 @@ h1 {
 
 #para {
   color: aquamarine;
-  font-size: clamp(10px, 2vw, 18px);
+  font-size: clamp(10px, 2vw, 17px);
   position: relative;
   text-align: center;
   font-weight: 300;
@@ -352,7 +356,7 @@ a:hover {
 h1 small {
   display: block;
   text-transform: lowercase;
-  font-size: .7em;
+  font-size: 0.7em;
 }
 
 h1 small:first-child {

@@ -259,14 +259,14 @@ footer a:hover {
     color: gray;
 }
 .child{
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     padding: 10px;
     float: left;
     width: 50%;
     text-align: justify;
 }
 .child a{
-    color: rgb(0, 76, 255);
+    color: rgb(83, 117, 198);
 }
 .child h3{
     font-size: clamp(1.1rem,1.6vw,2.5rem);
