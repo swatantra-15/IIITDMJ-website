@@ -29,6 +29,72 @@
     <div class="features">
         <h2>IIITDMJ FEATURES</h2>
         <h4>TAKE A DEEP INSIGHT</h4>
+        <section class="featurescontent">
+            <section class="child">
+                <table>
+                    <tr>
+                        <td>
+                            <i class="fas fa-university"></i>
+                        </td>
+                        <td>
+                            <h3><a href="#">Student's Campus Life</a></h3>
+                            <p>IIITDMJ emphasizes on several extra-curricular activities in addition to its rigorous academic programme. Institute is in the growing stage, Football ground, Volleyball court, basketball court and tennis court at the institute premises. IIITDMJ students have formed various clubs under Students Gymkhana, which organises various cultural, sports and activities.<br>
+                                <a href="#">More..<a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="child">
+            <table>
+                    <tr>
+                        <td>
+                            <i class="fa fa-lightbulb-o" style="padding-right: 15px;"></i>
+                        </td>
+                        <td>
+                            <h3><a href="#">Institute Innovation Council (IIC)</a></h3>
+                            <p>An Institute Innovation Council (IIC) has been established at IITDM Jabalpur as per the norms and directives of Ministry of Human Resource Development (MHRD) Innovation Cell (MIC). Ministry of Human Resource Development, Govt. of India...<br>
+                                <a href="downloads/Activity Calender of  IIC 2.0 Innovation Cell - IIITDMJ.pdf" target="_blank">Activity Calendar(IIC 2.0)</a><br>
+                                <a href="downloads/3rd QtrActivity Calender of  IIC 2.0 Innovation Cell.pdf" target="_blank">Activity Calendar(IIC 2.0)-3rd Quarter</a><br>
+                                <a href="#"> More..</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+        <section class="featurescontent">
+            <section class="child">
+                <table>
+                    <tr>
+                        <td>
+                            <i class="fa fa-gear"></i>
+                        </td>
+                        <td>
+                            <h3><a href="#">Electronics and ICT Academy</a></h3>
+                            <p>Department of Electronics and Information Technology, Government of India has instituted four Electronics and ICT Academies with one academy at IIITDM Jabalpur with the primary objective preparing manpower for two important missions - 'Digital India' and 'Make in India'.<br>
+                                <a href="#">More..</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="child">
+                <table>
+                    <tr>
+                        <td>
+                            <i class="fas">&#xf5d2;</i>
+                        </td>
+                        <td>
+                            <h3><a href="#">Research</a></h3>
+                            <p>IIITDM Jabalpur was established to foster the research and development activities in the areas of: IT enabled design and manufacturing, and Design of IT systems to meet the growing demands of the Indian industries.<br>
+                                <a href="#">More..</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </section>
     </div>
     <?php include 'footer.php'; ?>
 </body>
