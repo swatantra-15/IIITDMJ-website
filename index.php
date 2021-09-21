@@ -34,7 +34,7 @@
                 <table>
                     <tr>
                         <td>
-                            <i class="fas fa-university"></i>
+                            <i class="fas fa-university" style="padding-right: 5px;"></i>
                         </td>
                         <td>
                             <h3><a href="#">Student's Campus Life</a></h3>
@@ -49,7 +49,7 @@
             <table>
                     <tr>
                         <td>
-                            <i class="fa fa-lightbulb-o" style="padding-right: 15px;"></i>
+                            <i class="fa fa-lightbulb-o" style="padding-right: 25px;"></i>
                         </td>
                         <td>
                             <h3><a href="#">Institute Innovation Council (IIC)</a></h3>
