@@ -14,6 +14,7 @@
                     <a href="about.php">About</a>
                     <a href="#">General Administraion</a>
                     <a href="#">Placement Cell</a>
+                    <a href="#">Senate</a>
                 </div>
             </li>
             <li>
@@ -43,10 +44,17 @@
                     <a href="#">Activities</a>
                 </div>
             </li>
-            <li><a href="#">ACADEMICS</a></li>
-            <li><a href="#">RESEARCH</a></li>
-            <li><a href="login.html"><span>LOGIN</span></a></li>
+            <li>
+                <a href="#">FACILITIES</a>
+                <div class="dropdown">
+                    <a href="#">Computer Centre</a>
+                    <a href="#">Library</a>
+                    <a href="#">Bank & ATM</a>
+                </div>
+            </li>
+            <li><a href="academic.html">ACADEMICS</a></li>
             <li><a href="#"><span>JOB</span></a></li>
+            <li><a href="login.html"><span>LOGIN</span></a></li>
         </ul>
     </div>
 </div>
