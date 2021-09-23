@@ -18,10 +18,12 @@
     <div class="navbar">
         <?php include 'topnav.php'; ?>
         <?php include 'mainnav.php'; ?>
-        <div class="tour">
-            <span>IIITDMJ</span>
-            <div class="V-tour">
-                <a href="VirtualTour.html">VIRTUAL TOUR<i style="font-size: 2vw;" class='fas'>&#xf35a;</i></a>
+        <div class="maintour">
+            <div class="tour">
+                <span>IIITDMJ</span>
+                <div class="V-tour">
+                    <a href="VirtualTour.html">VIRTUAL TOUR<i style="font-size: clamp(1rem,2vw,2.2rem);" class='fas'>&#xf35a;</i></a>
+                </div>
             </div>
         </div>
     </div>

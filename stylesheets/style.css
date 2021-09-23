@@ -108,7 +108,7 @@ main navigation bar
     display: inline-block;
     padding: 20px 10px;
     font-family: 'Ubuntu', sans-serif;
-    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+    font-size: clamp(1rem, 1.2vw, 1.6rem);
 }
 
 /* Not displayed login at full page */
@@ -123,6 +123,7 @@ main navigation bar
 }
 
 .dropdown {
+    padding: 4px;
     display: none;
     position: absolute;
     background-color: lightslategray;
@@ -145,13 +146,16 @@ main navigation bar
 Tour button in the middle of the bgimage
 */
 
+.maintour{
+    position: relative;
+    top: 55%;
+}
 .tour {
-    width: 30%;
-    height: auto;
-    position: absolute;
     background-color: rgb(123, 186, 123);
-    top: 60%;
+    width: -moz-fit-content;
+    position: absolute;
     left: 20%;
+    padding: 10px;
 }
 
 .tour span {
@@ -162,13 +166,9 @@ Tour button in the middle of the bgimage
 .V-tour {
     background-color: aqua;
     position: relative;
-    top: 33%;
-    left: 70%;
-    transform: translate(-40%, -50%);
-    max-width: 60%;
-    height: auto;
+    height: max-content;
     text-align: center;
-    font-size: clamp(1rem, 2vw, 2.2rem);
+    font-size: clamp(0.9rem, 2vw, 2.2rem);
 }
 
 div.V-tour a {
@@ -188,9 +188,6 @@ media query for navbar
     }
     .top-navbar {
         display: none;
-    }
-    .V-tour {
-        width: 80%;
     }
     .Navigation-bar ul {
         height: max-content;
@@ -222,7 +219,7 @@ media query for navbar
         right: 0;
         display: block;
     }
-    #click:checked~.tour {
+    #click:checked~.maintour {
         display: none;
     }
 }
@@ -250,42 +247,56 @@ footer {
 footer a:hover {
     color: aqua;
 }
-.featurescontent{
+
+.featurescontent {
     display: flex;
 }
-.featurescontent i{
+
+.featurescontent i {
     padding-right: 10px;
     font-size: 50px;
     color: gray;
 }
-.child{
+
+.child {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     padding: 10px;
     float: left;
     width: 50%;
     text-align: justify;
 }
-.child:hover{
+
+.child:hover {
     transition: box-shadow .3s;
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.4);
 }
-.child a{
+
+.child a {
     color: rgb(83, 117, 198);
 }
-.child h3{
-    font-size: clamp(1.1rem,1.6vw,2.5rem);
+
+.child h3 {
+    font-size: clamp(1.1rem, 1.6vw, 2.5rem);
 }
-.child a:hover{
+
+.child a:hover {
     box-shadow: 0 0 2px 2px;
 }
-.child p{
-    font-size: clamp(0.8rem,1.5vw,2rem);
+
+.child p {
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
 }
-@media screen and (max-width:760px){
-    .featurescontent{
-        display: block; 
+
+@media screen and (max-width:760px) {
+    .featurescontent {
+        display: block;
     }
-    .child{
+    .child {
         width: 100%;
+    }
+}
+@media screen and (min-height:900px) {
+    .navbar{
+        height: 50vh;
     }
 }
