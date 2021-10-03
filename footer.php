@@ -1,4 +1,13 @@
 <footer>
+    <div>
+        <p>
+            <strong>
+                Location: <br>
+            </strong>
+            Indian Institute of Information Technology Design & Manufacturing Jabalpur
+            <br> Dumna Airport Road, Dumna - 482005
+        </p>
+    </div>
     <p>
         &copy;IIITDM Jabalpur-All rights Reserved
         <a href="downloads/IIITDMJ Telephone Directory.pdf" target="_blank">&#128222;</a>

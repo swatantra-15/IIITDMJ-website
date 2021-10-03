@@ -27,9 +27,7 @@
         <section class="child" style="min-width: 70%;">
             <table>
                 <tr>
-                    <td>
-                        <i class="fa fa-newspaper-o" style="padding-right: 5px;"></i>
-                    </td>
+                <i class="fa fa-newspaper-o" style="padding-right: 5px;float:left"></i>
                     <td>
                         <h3>IIITDM Jabalpur</h3>
                         <div class="aboutcontent">

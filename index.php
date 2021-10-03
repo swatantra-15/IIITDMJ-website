@@ -35,9 +35,7 @@
             <section class="child">
                 <table>
                     <tr>
-                        <td>
-                            <i class="fas fa-university" style="padding-right: 5px;"></i>
-                        </td>
+                        <i class="fas fa-university" style="padding-right: 5px;float:left"></i>
                         <td>
                             <h3><a href="#">Student's Campus Life</a></h3>
                             <p>IIITDMJ emphasizes on several extra-curricular activities in addition to its rigorous academic programme. Institute is in the growing stage, Football ground, Volleyball court, basketball court and tennis court at the institute premises. IIITDMJ students have formed various clubs under Students Gymkhana, which organises various cultural, sports and activities.<br>
@@ -48,11 +46,9 @@
                 </table>
             </section>
             <section class="child">
-            <table>
+                <table>
                     <tr>
-                        <td>
-                            <i class="fa fa-lightbulb-o" style="padding-right: 25px;"></i>
-                        </td>
+                        <i class="fa fa-lightbulb-o" style="padding-right: 25px;float:left"></i>
                         <td>
                             <h3><a href="#">Institute Innovation Council (IIC)</a></h3>
                             <p>An Institute Innovation Council (IIC) has been established at IITDM Jabalpur as per the norms and directives of Ministry of Human Resource Development (MHRD) Innovation Cell (MIC). Ministry of Human Resource Development, Govt. of India...<br>
@@ -69,9 +65,7 @@
             <section class="child">
                 <table>
                     <tr>
-                        <td>
-                            <i class="fa fa-gear"></i>
-                        </td>
+                        <i class="fa fa-gear" style="float:left"></i>
                         <td>
                             <h3><a href="#">Electronics and ICT Academy</a></h3>
                             <p>Department of Electronics and Information Technology, Government of India has instituted four Electronics and ICT Academies with one academy at IIITDM Jabalpur with the primary objective preparing manpower for two important missions - 'Digital India' and 'Make in India'.<br>
@@ -84,9 +78,7 @@
             <section class="child">
                 <table>
                     <tr>
-                        <td>
-                            <i class="fas">&#xf5d2;</i>
-                        </td>
+                        <i class="fas" style="float: left;">&#xf5d2;</i>
                         <td>
                             <h3><a href="#">Research</a></h3>
                             <p>IIITDM Jabalpur was established to foster the research and development activities in the areas of: IT enabled design and manufacturing, and Design of IT systems to meet the growing demands of the Indian industries.<br>

@@ -243,7 +243,11 @@ footer {
     top: 100vh;
     overflow: hidden;
 }
-
+footer div{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
 footer a:hover {
     color: aqua;
 }
