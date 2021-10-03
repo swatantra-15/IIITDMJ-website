@@ -42,6 +42,7 @@
                     <a href="#">Gymkhana</a>
                     <a href="#">Hostels</a>
                     <a href="#">Activities</a>
+                    <a href="PHC.php">Primary Health Centre</a>
                 </div>
             </li>
             <li>
