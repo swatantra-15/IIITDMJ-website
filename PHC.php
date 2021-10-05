@@ -105,7 +105,7 @@
                                     <a href="#" style="font-size: clamp(15px,2vw,25px);">Gymkhana</a>
                                 </li>
                                 <li>
-                                    <a href="#" style="font-size: clamp(15px,2vw,25px);">Activities</a>
+                                    <a href="activity.php" style="font-size: clamp(15px,2vw,25px);">Activities</a>
                                 </li>
                                 <li>
                                     <a href="#" style="font-size: clamp(15px,2vw,25px);">Counselling</a>
