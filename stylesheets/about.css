@@ -25,6 +25,7 @@
     box-shadow: 0 0 4px 5px;
 }
 .aboutcontent{
+    line-height: 1.5;
     padding: 15px 15px 20px 0;
 }
 td div ul li{
