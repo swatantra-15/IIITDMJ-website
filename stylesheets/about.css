@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.about {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translate(-15%);
+    width: fit-content;
+    overflow: hidden;
+}
+
+#click:checked~.about {
+    display: none;
+}
+.about h1{
+    color: blanchedalmond;
+    font-size: clamp(12px,4vw,50px);
+    background-color: transparent;
+    padding: 10px;
+    border-style: outset;
+    box-shadow: 0 0 4px 5px;
+}
+.aboutcontent{
+    line-height: 1.5;
+    padding: 15px 15px 20px 0;
+}
+td div ul li{
+    text-align: justify;
+    list-style:outside;
+}

@@ -1,8 +1,8 @@
+<input type="checkbox" id="click">
+<label for="click" class="checkbtn">
+    <i class="fas fa-bars"></i>
+</label>
 <div class="mainflexnav">
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-    </label>
     <div class="mainnav">
         <a href="index.php"><img src="stylesheets/images/iiitdmjlogo2.png" alt="PDPM"></a>
     </div>
@@ -13,6 +13,8 @@
                 <div class="dropdown">
                     <a href="about.php">About</a>
                     <a href="#">General Administraion</a>
+                    <a href="#">Placement Cell</a>
+                    <a href="#">Senate</a>
                 </div>
             </li>
             <li>
@@ -20,7 +22,7 @@
                 <div class="dropdown">
                     <a href="#">Computer Science & Engineering(CSE)</a>
                     <a href="#">Electronics & Communication Engineering(ECE)</a>
-                    <a href="#">Design(DES)</a>
+                    <a href="#">Design(Des)</a>
                     <a href="#">Mechanical Engineering(ME)</a>
                     <a href="#">Natural Sciences(NS)</a>
                 </div>
@@ -31,6 +33,7 @@
                     <a href="#">Faculty</a>
                     <a href="#">Deans</a>
                     <a href="#">Research Staff</a>
+                    <a href="#">Staff</a>
                 </div>
             </li>
             <li>
@@ -38,10 +41,21 @@
                 <div class="dropdown">
                     <a href="#">Gymkhana</a>
                     <a href="#">Hostels</a>
-                    <a href="#">Activities</a>
+                    <a href="activity.php">Activities</a>
+                    <a href="PHC.php">Primary Health Centre</a>
                 </div>
             </li>
-            <li><a href="#">CONTACT</a></li>
+            <li>
+                <a href="#">FACILITIES</a>
+                <div class="dropdown">
+                    <a href="#">Computer Centre</a>
+                    <a href="#">Library</a>
+                    <a href="#">Bank & ATM</a>
+                </div>
+            </li>
+            <li><a href="academic.html">ACADEMICS</a></li>
+            <li><a href="#"><span>JOB</span></a></li>
+            <li><a href="login.html"><span>LOGIN</span></a></li>
         </ul>
     </div>
 </div>
