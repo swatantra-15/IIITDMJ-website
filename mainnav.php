@@ -20,7 +20,7 @@
             <li>
                 <a href="#">DEPARTMENTS</a>
                 <div class="dropdown">
-                    <a href="#">Computer Science & Engineering(CSE)</a>
+                    <a href="CSE Department.php">Computer Science & Engineering(CSE)</a>
                     <a href="#">Electronics & Communication Engineering(ECE)</a>
                     <a href="#">Design(Des)</a>
                     <a href="#">Mechanical Engineering(ME)</a>
@@ -53,7 +53,7 @@
                     <a href="#">Bank & ATM</a>
                 </div>
             </li>
-            <li><a href="academic.html">ACADEMICS</a></li>
+            <li><a href="academic.php">ACADEMICS</a></li>
             <li><a href="#"><span>JOB</span></a></li>
             <li><a href="login.html"><span>LOGIN</span></a></li>
         </ul>

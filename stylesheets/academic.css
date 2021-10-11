@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.acadnav {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 15px;
+    font-size: clamp(0.5rem, 1.5vw, 2.5rem);
+    border: none;
+}
+
+.dropup {
+    padding: 0 6%;
+    position: relative;
+    display: inline-block;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: min-content;
+    bottom: 40px;
+    z-index: 1;
+}
+
+.dropup-content a {
+    font-size: clamp(0.8rem, 1.2vw, 2rem);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropup-content a:hover {
+    background-color: #ccc;
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+.dropup:hover .dropbtn {
+    background-color: #2980B9;
+}
+
+.main {
+    margin: auto;
+    width: 80vw;
+    border-radius: 10%;
+    padding: 2%;
+    background-color: lavender;
+    overflow: auto;
+    margin-top: 8px;
+}
+
+.main a {
+    color: #3498DB;
+}
+
+.main a:hover {
+    border: #2980B9 solid 2px;
+}
+
+.main p, a {
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
+}
+
+@media screen and (min-width: 654px) and (max-width: 900px) {
+    .dropup {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 654px) {
+    .dropup {
+        padding: 0 4%;
+    }
+    .dropup-content {
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dropup {
+        padding: 0 1.5%;
+    }
+    .dropup-content {
+        bottom: 25px;
+    }
+    .dropbtn{
+        padding: 10px;
+    }
+}

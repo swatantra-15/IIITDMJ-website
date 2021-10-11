@@ -37,9 +37,9 @@
                     <tr>
                         <i class="fas fa-university" style="padding-right: 5px;float:left"></i>
                         <td>
-                            <h3><a href="#">Student's Campus Life</a></h3>
+                            <h3><a href="activity.php">Student's Campus Life</a></h3>
                             <p>IIITDMJ emphasizes on several extra-curricular activities in addition to its rigorous academic programme. Institute is in the growing stage, Football ground, Volleyball court, basketball court and tennis court at the institute premises. IIITDMJ students have formed various clubs under Students Gymkhana, which organises various cultural, sports and activities.<br>
-                                <a href="#">More..<a>
+                                <a href="activity.php">More..<a>
                             </p>
                         </td>
                     </tr>
