@@ -65,33 +65,38 @@
                     
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
-                        <div class="numbertext">1 / 5</div>
+                        <div class="numbertext">1 / 6</div>
                         <img src="stylesheets/images/administration.jpg" style="width:100%">
                         <div class="text">Administration Building</div>
                     </div>
                     
                     <div class="mySlides fade">
-                        <div class="numbertext">2 / 5</div>
+                        <div class="numbertext">2 / 6</div>
                         <img src="stylesheets/images/virtualtour.jpg" style="width:100%">
                         <div class="text">Visitor Hostel</div>
                     </div>
                     
                     <div class="mySlides fade">
-                        <div class="numbertext">3 / 5</div>
+                        <div class="numbertext">3 / 6</div>
                         <img src="stylesheets/images/CCBuilding.jpg" style="width:100%">
                         <div class="text">Libray Cum-Computer Center Building</div>
                     </div>
                     
                     <div class="mySlides fade">
-                        <div class="numbertext">4 / 5</div>
+                        <div class="numbertext">4 / 6</div>
                         <img src="stylesheets/images/College.jpg" style="width:100%">
                         <div class="text">Lecture Hall & Tutorial Complex</div>
                     </div>
                     
                     <div class="mySlides fade">
-                        <div class="numbertext">5 / 5</div>
+                        <div class="numbertext">5 / 6</div>
                         <img src="stylesheets/images/college2.jpg" style="width:100%">
                         <div class="text">Core Lab Complex</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="stylesheets/images/OAT.jpg" style="width:100%">
+                        <div class="text">Open Air Theatre</div>
                     </div>
                     
                     <!-- Next and previous buttons -->
@@ -107,6 +112,7 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
                     <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
                 <script src="stylesheets/slide.js"></script>
             </section>
@@ -116,7 +122,8 @@
                         <td>
                             <h3>See Also</h3>
                             <p><br>
-                            <a href="#" style="font-size: clamp(15px,2vw,25px);">Institute Administration</a>
+                            <a href="#" style="font-size: clamp(15px,2vw,25px);">Institute Administration</a> <br>
+                            <a href="downloads/Ordinances.pdf" style="font-size: clamp(15px,2vw,25px);" target="_blank">Ordinances</a>
                         </p>
                     </td>
                 </tr>

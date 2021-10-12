@@ -96,7 +96,7 @@
                                     <a href="PHC.php" style="font-size: clamp(15px,2vw,25px);">Primary Health Centre</a>
                                 </li>
                                 <li>
-                                    <a href="#" style="font-size: clamp(15px,2vw,25px);">Counselling</a>
+                                    <a href="Counseling.php" style="font-size: clamp(15px,2vw,25px);">Counselling</a>
                                 </li>
                                 <li>
                                     <a href="#" style="font-size: clamp(15px,2vw,25px);">Hostels</a>

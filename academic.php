@@ -33,8 +33,8 @@
 
     <div class="main">
         <h2>Some Useful links</h2>
-        <a href="Downloads/Seat Matrix 2019-20.pdf">Seat Matrix 2019-20</a><br>
-        <a href="Downloads/Academic Guidelines_271017.pdf">Academic Guidelines</a>
+        <a href="Downloads/Seat Matrix 2019-20.pdf" target="_blank">Seat Matrix 2019-20</a><br>
+        <a href="Downloads/Academic Guidelines_271017.pdf" target="_blank">Academic Guidelines</a>
     </div>
 
     <?php include 'footer.php'; ?>

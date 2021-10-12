@@ -18,9 +18,9 @@
     <div class="dropup">
         <button class="dropbtn">IMPORTANT LINKS</button>
         <div class="dropup-content">
-            <a href="#">Academic Calendar</a>
+            <a href="Acad_Calendar.php">Academic Calendar</a>
             <a href="#">Useful Information</a>
-            <a href="downloads/Refund Rule 2021.pdf">Revised Refund Rule 2021</a>
+            <a href="downloads/Refund Rule 2021.pdf" target="_blank">Revised Refund Rule 2021</a>
             <a href="#">Convocation</a>
             <a href="#">Important Forms</a>
         </div>

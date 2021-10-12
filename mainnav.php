@@ -40,9 +40,10 @@
                 <a href="#">STUDENTS</a>
                 <div class="dropdown">
                     <a href="#">Gymkhana</a>
-                    <a href="#">Hostels</a>
+                    <a href="hostels.php">Hostels</a>
                     <a href="activity.php">Activities</a>
                     <a href="PHC.php">Primary Health Centre</a>
+                    <a href="Counseling.php">Counseling</a>
                 </div>
             </li>
             <li>
@@ -50,7 +51,7 @@
                 <div class="dropdown">
                     <a href="#">Computer Centre</a>
                     <a href="#">Library</a>
-                    <a href="#">Bank & ATM</a>
+                    <a href="downloads/Banking Facilities in PDPM.pdf" target="_blank">Bank & ATM</a>
                 </div>
             </li>
             <li><a href="academic.php">ACADEMICS</a></li>
