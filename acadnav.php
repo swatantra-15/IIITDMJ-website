@@ -1,4 +1,5 @@
 <a href="index.php"><img src="stylesheets/images/title_iiit.jpg" width="100%"></a>
+<a href="academic.php" style="background-color:brown; padding: 10px; position:relative; left:40%; top:2%">ACADEMIC HOME</a>
 <div class="acadnav">
 
 
@@ -10,7 +11,7 @@
             <a href="#">M.des</a>
             <a href="#">B.Des</a>
             <a href="#">P.hd</a>
-            <a href="#">Integrated Master+PHD</a>
+            <a href="integrated_phd.php">Integrated Master+PHD</a>
             <a href="#">Special Part Time M.Tech/MDes</a>
         </div>
     </div>
