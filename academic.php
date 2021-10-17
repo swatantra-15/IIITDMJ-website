@@ -14,7 +14,7 @@
 <body>
     <div class="navbar" style="background-image:linear-gradient(rgba(0,4,50,0.2),rgba(0,2,40,0.6)),url(stylesheets/images/administration.jpg); position: relative; overflow:hidden">
         <?php include 'acadnav.php'; ?>
-        <div class="main" style="position:relative;top:30%; width: 60%">
+        <div class="main" style="position:relative;top:28%; width: 50%">
             <h1 align="center">
                 Academics
             </h1>

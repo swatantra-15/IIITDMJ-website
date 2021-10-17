@@ -146,10 +146,11 @@ main navigation bar
 Tour button in the middle of the bgimage
 */
 
-.maintour{
+.maintour {
     position: relative;
     top: 55%;
 }
+
 .tour {
     background-color: rgb(123, 186, 123);
     width: -moz-fit-content;
@@ -160,7 +161,7 @@ Tour button in the middle of the bgimage
 
 .tour span {
     color: bisque;
-    font-size: clamp(1.2rem, 3vw, 3rem);
+    font-size: clamp(1.3rem, 3vw, 3rem);
 }
 
 .V-tour {
@@ -168,7 +169,7 @@ Tour button in the middle of the bgimage
     position: relative;
     height: max-content;
     text-align: center;
-    font-size: clamp(0.9rem, 2vw, 2.2rem);
+    font-size: clamp(1rem, 2vw, 2.2rem);
 }
 
 div.V-tour a {
@@ -180,6 +181,124 @@ div.V-tour a {
 /* 
 media query for navbar 
 */
+
+/* first view of website end */
+
+.features {
+    text-align: center;
+}
+
+.features h4 {
+    color: rgb(68, 64, 60);
+}
+
+footer {
+    text-align: center;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: sticky;
+    top: 100vh;
+    overflow: hidden;
+}
+
+footer div {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+footer a:hover {
+    color: aqua;
+}
+
+.featurescontent {
+    display: flex;
+}
+
+.featurescontent i {
+    padding-right: 10px;
+    font-size: 50px;
+    color: gray;
+}
+
+.child {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    float: left;
+    width: 50%;
+    text-align: justify;
+}
+
+.child:hover {
+    transition: box-shadow .3s;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.child a {
+    color: rgb(83, 117, 198);
+}
+
+.child h3 {
+    font-size: clamp(1.3rem, 1.6vw, 2.5rem);
+}
+
+.child a:hover {
+    box-shadow: 0 0 2px 2px;
+}
+
+.child p {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+@media screen and (max-width:780px) {
+    .featurescontent {
+        display: block;
+    }
+    .child {
+        width: 100%;
+    }
+}
+
+@media screen and (min-height:900px) {
+    .navbar {
+        height: 50vh;
+    }
+}
+
+.focusOn {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: min-content;
+    width: 100%;
+    padding: 20px;
+}
+
+.focusOn div a img {
+    height: 12vw;
+    width: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.focusOn div a img:hover {
+    transition: box-shadow .3s;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.focusOn div {
+    position: relative;
+}
+
+.focustext {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: max-content;
+    position: absolute;
+    bottom: 20%;
+    left: 16px;
+    font-size: clamp(1rem, 3vw, 2rem);
+}
 
 @media screen and (max-width: 900px) {
     .checkbtn {
@@ -222,85 +341,17 @@ media query for navbar
     #click:checked~.maintour {
         display: none;
     }
-}
-
-/* first view of website end */
-
-.features {
-    text-align: center;
-}
-
-.features h4 {
-    color: rgb(68, 64, 60);
-}
-
-footer {
-    text-align: center;
-    padding: 4px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    position: sticky;
-    top: 100vh;
-    overflow: hidden;
-}
-footer div{
-    margin: 0;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-footer a:hover {
-    color: aqua;
-}
-
-.featurescontent {
-    display: flex;
-}
-
-.featurescontent i {
-    padding-right: 10px;
-    font-size: 50px;
-    color: gray;
-}
-
-.child {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-    padding: 10px;
-    float: left;
-    width: 50%;
-    text-align: justify;
-}
-
-.child:hover {
-    transition: box-shadow .3s;
-    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.4);
-}
-
-.child a {
-    color: rgb(83, 117, 198);
-}
-
-.child h3 {
-    font-size: clamp(1.1rem, 1.6vw, 2.5rem);
-}
-
-.child a:hover {
-    box-shadow: 0 0 2px 2px;
-}
-
-.child p {
-    font-size: clamp(0.8rem, 1.5vw, 2rem);
-}
-
-@media screen and (max-width:780px) {
-    .featurescontent {
+    .focusOn {
         display: block;
     }
-    .child {
-        width: 100%;
+    .focusOn div a img {
+        margin-left: 15%;
+        width: 70%;
+        height: auto;
+        padding: 2px;
     }
-}
-@media screen and (min-height:900px) {
-    .navbar{
-        height: 50vh;
+    .focustext {
+        margin-left: 15%;
+        bottom: 50px;
     }
 }

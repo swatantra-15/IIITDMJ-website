@@ -1,5 +1,7 @@
 <a href="index.php"><img src="stylesheets/images/title_iiit.jpg" width="100%"></a>
-<a href="academic.php" style="background-color:brown; padding: 10px; position:relative; left:40%; top:2%">ACADEMIC HOME</a>
+<div style="margin: auto; width:max-content; position:relative;top: 2%">
+    <a href="academic.php" style="background-color:brown; padding: 10px; ">ACADEMIC HOME</a>
+</div>
 <div class="acadnav">
 
 

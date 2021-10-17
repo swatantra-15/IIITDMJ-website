@@ -90,6 +90,42 @@
             </section>
         </section>
     </div>
+    <br>
+    <div style="text-align: center">
+        <h2>Focus On</h2>
+        <p style="font-size: clamp(1.2rem, 1.5vw, 2.5rem);">Know more about IIITDMJ</p>
+    </div>
+    <div class="focusOn">
+
+        <div>
+            <a href="activity.php">
+                <img src="stylesheets/images/Student.jpg" alt="">
+                <div class="focustext">Students Life</div>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <img src="stylesheets/images/Alumni.jpg" alt="">
+                <div class="focustext">Alumni</div>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <img src="stylesheets/images/nirf.jpg" alt="">
+                <div class="focustext"> Nirf</div>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <img src="stylesheets/images/Placement.jpg" alt="">
+                <div class="focustext">Placement</div>
+            </a>
+        </div>
+
+    </div>
     <?php include 'footer.php'; ?>
 </body>
 
