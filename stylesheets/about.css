@@ -30,5 +30,5 @@
 }
 td div ul li{
     text-align: justify;
-    list-style:outside;
+    list-style: inside;
 }

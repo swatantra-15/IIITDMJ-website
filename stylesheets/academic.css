@@ -75,3 +75,6 @@
 .main p, a {
     font-size: clamp(1rem, 1.5vw, 1.8rem);
 }
+.main h1{
+    font-size: clamp(1rem,2vw,2.5rem);
+}

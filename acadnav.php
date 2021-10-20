@@ -14,7 +14,7 @@
             <a href="#">B.Des</a>
             <a href="#">P.hd</a>
             <a href="integrated_phd.php">Integrated Master+PHD</a>
-            <a href="#">Special Part Time M.Tech/MDes</a>
+            <a href="part_time_MTech.php">Special Part Time M.Tech/MDes</a>
         </div>
     </div>
 
