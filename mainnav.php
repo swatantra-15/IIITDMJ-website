@@ -31,8 +31,8 @@
                 <a href="#">PEOPLE</a>
                 <div class="dropdown">
                     <a href="#">Faculty</a>
-                    <a href="#">Deans</a>
-                    <a href="#">Research Staff</a>
+                    <a href="dean.php">Deans</a>
+                    <a href="student.php">Enrolled Students</a>
                     <a href="#">Staff</a>
                 </div>
             </li>
