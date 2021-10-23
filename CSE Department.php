@@ -170,8 +170,9 @@
                 <ul class="list_1">
                     <li><a href="index.php">IIITDMJ HOME</a></li>
                     <li><a href="#" target="_blank">Academic Calender</a></li>
-                    <li><a href="http://www.iiitdmj.ac.in/downloads/Closed%20Holiday%202019.pdf" target="_blank">Holidays 2019</a></li>
+                    <li><a href="downloads/Closed Holiday 2021.pdf" target="_blank">Holidays 2021</a></li>
                     <li><a href="http://faculty.iiitdmj.ac.in/faculty/prabin16" target="_blank">Dean</a></li>
+                    <li><a href="student.php">Students</a></li>
                 </ul>
             </div>
         </div>

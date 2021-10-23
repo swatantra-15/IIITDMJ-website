@@ -16,8 +16,9 @@
         </a>
         <h2>Login</h2>
         <form action="login_check.php" method="post">
-            <p>Email</p><input placeholder="Enter Email" type="email" required>
-            <p>Password</p><input placeholder="Enter Password" type="password" required> <input type="submit" value="Sign in">
+            <p>Email</p><input placeholder="Enter Email" type="email" name="username" id="username" required>
+            <p>Password</p><input placeholder="Enter Password" type="password" name="password" id="password" required> 
+            <input type="submit" name="submit" value="Sign in">
             <p><input type="checkbox">Remember Me</p>
         </form>
     </div>
