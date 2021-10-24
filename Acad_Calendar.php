@@ -79,7 +79,7 @@
                     die('Failed to connect to server: ');
                 }
                 /*Create query*/
-                $qry = 'SELECT * FROM acad_calendar WHERE sem=1';
+                $qry = 'SELECT * FROM acad_calendar WHERE sem="1"';
 
                 /*Execute query*/
                 $result = mysqli_query($link, $qry);
@@ -100,6 +100,20 @@
                 $qry2= 'SELECT * FROM acad_calendar WHERE sem="2"';
                 $nextresult=mysqli_query($link,$qry2);
                 while ($row=mysqli_fetch_assoc($nextresult)) {
+                    echo
+                    '<tr> 
+          <td style="font-size: medium">' . $row['cal_id'] . '</td>
+          <td style="font-size: medium">' . $row['heading'] . '</td>
+          <td style="font-size: medium">' . $row['date_ug_pg'] . '</a></td>
+          <td style="font-size: medium">' . $row['date_else'] . '</a></td>
+          </tr>';
+                }
+                echo '<tr>
+                <th colspan="4" style="color: red;">Summer Semester </th>
+                </tr>';
+                $qry3= 'SELECT * FROM acad_calendar WHERE sem="sum"';
+                $sumresult=mysqli_query($link,$qry3);
+                while ($row=mysqli_fetch_assoc($sumresult)) {
                     echo
                     '<tr> 
           <td style="font-size: medium">' . $row['cal_id'] . '</td>
