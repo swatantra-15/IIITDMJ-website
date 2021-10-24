@@ -10,6 +10,7 @@
     top: 50%;
     transform: translate(-15%);
     width: fit-content;
+    width: -moz-fit-content;
     overflow: hidden;
 }
 
