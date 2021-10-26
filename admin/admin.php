@@ -1,0 +1,1 @@
+<a href="news_notice.php">notice/news</a>

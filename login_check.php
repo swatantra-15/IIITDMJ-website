@@ -25,7 +25,7 @@ if ($_POST['submit'] == "Sign in") {
             session_start();
             $_SESSION['IS_AUTHENTICATED'] = 1;
             $_SESSION['USER_ID'] = $login;
-            header('location:admin.php');
+            header('location:admin/admin.php');
         } else {
             //Login failed
             include('login.html');

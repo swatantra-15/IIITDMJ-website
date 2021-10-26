@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -94,8 +93,7 @@
                                 <div class="carousel-item active">
                                     <div class="card-body">
                                         <div class="d-flex flex-column align-items-center text-center">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""
-                                                class="rounded-circle" width="150">
+                                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="rounded-circle" width="150">
                                             <div class="mt-3">
                                                 <h3>John Doe</h3>
                                                 <p class="text-secondary mb-2">Professor</p>
@@ -109,8 +107,7 @@
                                 <div class="carousel-item">
                                     <div class="card-body">
                                         <div class="d-flex flex-column align-items-center text-center">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""
-                                                class="rounded-circle" width="150">
+                                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="rounded-circle" width="150">
                                             <div class="mt-3">
                                                 <h3>Alex</h3>
                                                 <p class="text-secondary mb-2">Asisstant Professor</p>
@@ -124,8 +121,7 @@
                                 <div class="carousel-item">
                                     <div class="card-body">
                                         <div class="d-flex flex-column align-items-center text-center">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""
-                                                class="rounded-circle" width="150">
+                                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="rounded-circle" width="150">
                                             <div class="mt-3">
                                                 <h3>Ronny</h3>
                                                 <p class="text-secondary mb-2">TA</p>
@@ -156,7 +152,19 @@
                 <div class="not" style="height: 50%;">
                     <p class="font-weight-bold" style="font-size: 1.3rem; margin-bottom: 0%;">NOTICE</p>
                     <hr>
-                    <p></p>
+                    <p>
+                    <ol>
+                        <?php
+                        $dbh = new PDO("mysql:host=localhost;dbname=iiitdmj", "root", "");
+                        $stat = $dbh->prepare("SELECT * from news_events");
+                        $stat->execute();
+                        while ($row = $stat->fetch()) {
+                            echo "<i class='fa fa-envelope'></i> <a target='_blank' style='color:red' href='admin/pdf/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
+                        }
+
+                        ?>
+                    </ol>
+                    </p>
                 </div>
                 <div class="event" style="height: 50%">
                     <p class="font-weight-bold" style="font-size: 1.2rem;margin-bottom: 0%;">NEWS/EVENT</p>
@@ -172,7 +180,7 @@
                     <li><a href="#" target="_blank">Academic Calender</a></li>
                     <li><a href="downloads/Closed Holiday 2021.pdf" target="_blank">Holidays 2021</a></li>
                     <li><a href="http://faculty.iiitdmj.ac.in/faculty/prabin16" target="_blank">Dean</a></li>
-                    <li><a href="student.php">Students</a></li>
+                    <li><a href="cse_students.php">Students</a></li>
                 </ul>
             </div>
         </div>
