@@ -27,7 +27,39 @@
             </div>
         </div>
     </div>
+    <hr>
+    <div class="event">
+        <div>
+            NOTICE <i class="fa fa-envelope"></i>
+            <hr>
+            <p>
+                <?php
+                $dbh = new PDO("mysql:host=localhost;dbname=iiitdmj", "root", "");
+                $stat = $dbh->prepare("SELECT * from news_events WHERE Place='All' AND scope='Notice'");
+                $stat->execute();
+                while ($row = $stat->fetch()) {
+                    echo "<img src='stylesheets/images/new.gif'><a target='_blank' style='color:red; padding:10px' href='admin/pdf/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
+                }
+                ?>
+            </p>
+        </div>
+        <div>
+            News <i class="fa fa-newspaper-o"></i>
+            <hr>
+            <p>
+            <?php
+                $dbh = new PDO("mysql:host=localhost;dbname=iiitdmj", "root", "");
+                $stat = $dbh->prepare("SELECT * from news_events WHERE Place='All' AND scope='News'");
+                $stat->execute();
+                while ($row = $stat->fetch()) {
+                    echo "<img src='stylesheets/images/new.gif'><a target='_blank' style='color:red; padding:10px' href='admin/pdf/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
+                }
 
+                ?>
+            </p>
+        </div>
+    </div>
+    <hr>
     <div class="features">
         <h2>IIITDMJ FEATURES</h2>
         <h4>TAKE A DEEP INSIGHT</h4>

@@ -150,26 +150,32 @@
             <div class="col-md-4" id="im">
                 <br>
                 <div class="not" style="height: 50%;">
-                    <p class="font-weight-bold" style="font-size: 1.3rem; margin-bottom: 0%;">NOTICE</p>
+                    <p class="font-weight-bold" style="font-size: 1.3rem; margin-bottom: 0%;">NOTICE <i class="fa fa-envelope"></i> </p>
                     <hr>
                     <p>
-                    <ol>
                         <?php
                         $dbh = new PDO("mysql:host=localhost;dbname=iiitdmj", "root", "");
-                        $stat = $dbh->prepare("SELECT * from news_events");
+                        $stat = $dbh->prepare("SELECT * from news_events WHERE Place='CSE' AND scope='Notice'");
                         $stat->execute();
                         while ($row = $stat->fetch()) {
-                            echo "<i class='fa fa-envelope'></i> <a target='_blank' style='color:red' href='admin/pdf/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
+                            echo "<img src='stylesheets/images/new.gif'> <a target='_blank' style='color:red' href='admin/pdf/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
                         }
-
                         ?>
-                    </ol>
                     </p>
                 </div>
                 <div class="event" style="height: 50%">
-                    <p class="font-weight-bold" style="font-size: 1.2rem;margin-bottom: 0%;">NEWS/EVENT</p>
+                    <p class="font-weight-bold" style="font-size: 1.2rem;margin-bottom: 0%;">NEWS/EVENT <i class="fa fa-newspaper-o"></i></p>
                     <hr>
-                    <p></p>
+                    <p>
+                        <?php
+                        $dbh = new PDO("mysql:host=localhost;dbname=iiitdmj", "root", "");
+                        $stat = $dbh->prepare("SELECT * from news_events WHERE Place='CSE' AND scope='News'");
+                        $stat->execute();
+                        while ($row = $stat->fetch()) {
+                            echo "<img src='stylesheets/images/new.gif'> <a target='_blank' style='color:red' href='admin/pdf/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
+                        }
+                        ?>
+                    </p>
                 </div>
             </div>
 
