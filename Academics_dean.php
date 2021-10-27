@@ -11,37 +11,7 @@
     <link rel="stylesheet" href="stylesheets/about.css">
     <link rel="stylesheet" href="stylesheets/carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        #block {
-            height: 88%;
-            width: 70%;
-            margin: auto;
-            margin-top: 3%;
-            margin-bottom: 2.5%;
-            background-color: #ebe0d2;
-            box-shadow: 10px 10px grey;
-        }
-
-        h1 {
-            margin-bottom: 1.2rem;
-            color: rgb(43, 43, 153);
-            text-shadow: 1px 1px 2px black;
-        }
-
-        .table-bordered>tbody>tr>td,
-        .table-bordered>tbody>tr>th,
-        .table-bordered>tfoot>tr>td,
-        .table-bordered>tfoot>tr>th,
-        .table-bordered>thead>tr>td,
-        .table-bordered>thead>tr>th {
-            border: 1px solid #555;
-        }
-
-        .table-bordered {
-            border: 3px solid #555;
-            width: 80%;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesheets/table.css">
 </head>
 
 <body>
@@ -55,15 +25,17 @@
     <div id="block" class="container" style="padding: 0.8rem;">
         <div class="container" style="text-align: center;">
             <h1>Office of Dean (Academic)</h1>
-            <p style="background-color: aqua;"><?php 
-            $link=mysqli_connect('localhost','root','','iiitdmj');
-            $result=mysqli_query($link,'SELECT * FROM dean WHERE department_name="Academics"');
-            $row=mysqli_fetch_assoc($result);
-            echo $row['name'];
-            ?><br>
+            <p style="background-color: aqua;">
+                <?php
+                $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
+                $result = mysqli_query($link, 'SELECT * FROM dean WHERE department_name="Academics"');
+                $row = mysqli_fetch_assoc($result);
+                echo $row['name'];
+                ?><br>
                 Professor, Mechanical Engineering Discipline <br>
                 Dean (Academic) <br>
-                PDPM IIITDM Jabalpur</p>
+                PDPM IIITDM Jabalpur
+            </p>
         </div><br>
         <table class="table table-bordered  text-center " style="margin:auto; margin-bottom: 20px;">
             <thead>
