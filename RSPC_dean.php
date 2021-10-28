@@ -11,37 +11,7 @@
     <link rel="stylesheet" href="stylesheets/about.css">
     <link rel="stylesheet" href="stylesheets/carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        #block {
-            height: 88%;
-            width: 70%;
-            margin: auto;
-            margin-top: 3%;
-            margin-bottom: 2.5%;
-            background-color: #ebe0d2;
-            box-shadow: 10px 10px grey;
-        }
-
-        h1 {
-            margin-bottom: 1.2rem;
-            color: rgb(43, 43, 153);
-            text-shadow: 1px 1px 2px black;
-        }
-
-        .table-bordered>tbody>tr>td,
-        .table-bordered>tbody>tr>th,
-        .table-bordered>tfoot>tr>td,
-        .table-bordered>tfoot>tr>th,
-        .table-bordered>thead>tr>td,
-        .table-bordered>thead>tr>th {
-            border: 1px solid #555;
-        }
-
-        .table-bordered {
-            border: 3px solid #555;
-            width: 80%;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesheets/table.css">
 </head>
 
 <body>
@@ -65,8 +35,9 @@
                 ?>
                 <br>
                 Dean of Research, Sponsored Projects and Consultancy
-            </div>
-            <br>
+            </p>
+        </div>
+        <br>
         <table class="table table-bordered  text-center " style="margin:auto; margin-bottom: 20px;">
             <thead>
                 <tr style="background-color: rgba(0,0,0,0.6);color:white; font-size:x-large">

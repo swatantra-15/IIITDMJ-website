@@ -11,49 +11,11 @@
   <link rel="stylesheet" href="stylesheets/about.css">
   <link rel="stylesheet" href="stylesheets/carousel.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    .table-bordered tr th {
-      font-size: clamp(1rem, 1.5vw, 2.5rem);
-    }
-
-    tr td {
-      font-size: clamp(0.9rem, 1.4vw, 2.2rem);
-    }
-
-    #block {
-      height: 88%;
-      width: 90%;
-      margin: auto;
-      margin-top: 3%;
-      margin-bottom: 2.5%;
-      background-color: #ebe0d2;
-      box-shadow: 10px 10px grey;
-    }
-
-    h1 {
-      margin-bottom: 1.2rem;
-      color: rgb(43, 43, 153);
-      text-shadow: 1px 1px 2px black;
-    }
-
-    .table-bordered>tbody>tr>td,
-    .table-bordered>tbody>tr>th,
-    .table-bordered>tfoot>tr>td,
-    .table-bordered>tfoot>tr>th,
-    .table-bordered>thead>tr>td,
-    .table-bordered>thead>tr>th {
-      border: 1px solid #555;
-    }
-
-    .table-bordered {
-      border: 3px solid #555;
-      width: 80%;
-    }
-  </style>
+  <link rel="stylesheet" href="stylesheets/table.css">
 </head>
 
 <body>
-  <div style="font-size: xx-large; width:fit-content; margin:auto">
+  <div style="font-size: xx-large; width:fit-content;width:-moz-fit-content; margin:auto">
     CSE STUDENTS
   </div>
   <div id="block" class="container" style="padding: 0.8rem;">
