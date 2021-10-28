@@ -11,37 +11,7 @@
     <link rel="stylesheet" href="stylesheets/about.css">
     <link rel="stylesheet" href="stylesheets/academic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        #block {
-            height: 88%;
-            width: 95%;
-            margin: auto;
-            margin-top: 3%;
-            margin-bottom: 2.5%;
-            background-color: #ebe0d2;
-            box-shadow: 10px 10px grey;
-        }
-
-        .container h1 {
-            margin-bottom: 1.2rem;
-            color: rgb(43, 43, 153);
-            text-shadow: 1px 1px 2px black;
-        }
-
-        .table-bordered>tbody>tr>td,
-        .table-bordered>tbody>tr>th,
-        .table-bordered>tfoot>tr>td,
-        .table-bordered>tfoot>tr>th,
-        .table-bordered>thead>tr>td,
-        .table-bordered>thead>tr>th {
-            border: 1px solid #555;
-        }
-
-        .table-bordered {
-            border: 3px solid #555;
-            width: 95%;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesheets/table.css">
 </head>
 
 <body>
@@ -53,7 +23,7 @@
             </h1>
         </div>
     </div>
-    <div id="block" class="container" style="padding: 0.8rem;">
+    <div id="block" class="container" style="padding: 0.8rem;width:95%">
         <div class="container" style="text-align: center;">
         <i class="fa fa-calendar" style="font-size: x-large;"></i>
             <h1>Academic Calendar for Session 2021-22</h1>

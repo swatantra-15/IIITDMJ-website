@@ -30,7 +30,7 @@
             <li>
                 <a href="#">PEOPLE</a>
                 <div class="dropdown">
-                    <a href="#">Faculty</a>
+                    <a href="faculty.php">Faculty</a>
                     <a href="dean.php">Deans</a>
                     <a href="student.php">Enrolled Students</a>
                     <a href="#">Staff</a>

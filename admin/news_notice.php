@@ -20,6 +20,8 @@
 </head>
 
 <body>
+    <?php include 'includes/header.php'; ?>
+    <?php include 'includes/navbar.php'; ?>
     <!-- <?php
             $dbh = new PDO("mysql:host=localhost;dbname=iiitdmj", "root", "");
             if (isset($_POST['btn'])) {
@@ -38,7 +40,7 @@
             }
             ?> -->
     <div id="nad">
-        <h3 align="center">New Notice/News</h3>
+        <h3 align="center" style="color: Red;">New Notice/News</h3>
         <form method="POST" enctype="multipart/form-data">
             <div class="row mt-3">
                 <div class="col-md-4 mt-2">
@@ -58,7 +60,7 @@
                     <div class="form-group">
                         <label for="to_store">Type:</label><br>
                         <select name="to_store" id="">
-                            <option selected>choose what to store</option>
+                            <option selected>Choose What To Store</option>
                             <option value="Notice">Notice</option>
                             <option value="News">News</option>
                         </select>
@@ -80,34 +82,36 @@
     </div>
     <br>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <div id="block" style="padding: 0.8rem;">
+    <div id="block" style="padding: 0.8rem;height:fit-content">
         <h1 align="center">Notice/News</h1>
         <table class="table table-bordered  text-center " style="margin:auto; margin-bottom: 20px;">
             <thead>
                 <tr style="background-color: rgba(0,0,0,0.6);color:white; font-size:large">
                     <th> Id </th>
                     <th> Name </th>
+                    <th> Where </th>
                     <th> Type Of Data </th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                include_once '../connection/connection.php';
+                include_once 'includes/connect.php';
                 /*Create query*/
                 $qry = 'SELECT * FROM news_events';
 
                 /*Execute query*/
-                $result = mysqli_query($link, $qry);
+                $result = mysqli_query($con, $qry);
 
                 /*Show the rows in the fetched result set one by one*/
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo
                     '<tr> 
-                <td style="font-size: medium">' . $row['id'] . '</td>
-                <td style="font-size: medium">' . $row['Name'] . '</td>
-                <td style="font-size: medium">' . $row['scope'] . '</td>
-                <td style="font-size: medium">
+                <td style="font-size: medium; color:black">' . $row['id'] . '</td>
+                <td style="font-size: medium; color:black">' . $row['Name'] . '</td>
+                <td style="font-size: medium; color:black">' . $row['Place'] . '</td>
+                <td style="font-size: medium; color:black">' . $row['scope'] . '</td>
+                <td style="font-size: medium;">
                 <div class="col-md-1 mt-2">
                 <div class="form-group pt-2">
                 <button name="del" class="btn btn-primary" style="background-color:red"><a href="delete_function.php?event_id=' . $row['id'] . ' " style="color:white; text-decoration:none"> Delete</a></button>
@@ -120,6 +124,10 @@
                 </table>';
                 ?>
     </div>
+    <?php 
+       include('includes/script.php');
+       include('includes/footer.php');
+       ?>
 </body>
 
 </html>
