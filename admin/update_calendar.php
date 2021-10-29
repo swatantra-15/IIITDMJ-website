@@ -1,4 +1,4 @@
-<div class="modal fade" id="update_modal<?php echo $row['cal_id'] & $row['sem']?>" aria-hidden="true">
+<div class="modal fade" id="update_modal<?php echo $row['cal_id'] ?>" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<form method="POST" action="update_Calquery.php">
@@ -10,7 +10,6 @@
 					<div class="col-md-8">
 						<div class="form-group">
 							<input type="hidden" name="cal_id" value="<?php echo $row['cal_id']?>"/>
-							<input type="hidden" name="sem" value="<?php echo $row['sem']?>"/>
 							<label>Event</label>
 							<input type="text" name="heading" value="<?php echo $row['heading']?>" class="form-control" required="required"/>
 						</div>

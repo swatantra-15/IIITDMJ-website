@@ -123,7 +123,7 @@
                 <td style="font-size: medium;">
                 <div class="col-md-1 mt-2">
                 <div class="form-group pt-2">
-                <button name="update1" class="btn btn-primary" style="background-color:green" data-toggle="modal" type="button"           data-target="#update_modal<?php echo $row['cal_id'] & $row['sem']?>"><span class="glyphicon glyphicon-edit"></span>Update</button>
+                <button name="update1" class="btn btn-primary" style="background-color:green" data-toggle="modal" type="button"           data-target="#update_modal<?php echo $row['cal_id']?>"><span class="glyphicon glyphicon-edit"></span>Update</button>
                 </div>
                 </div>
                 </td>
@@ -151,7 +151,7 @@
                 <td style="font-size: medium;">
                 <div class="col-md-1 mt-2">
                 <div class="form-group pt-2">
-                <button name="update2" class="btn btn-primary" style="background-color:green" data-toggle="modal" type="button"           data-target="#update_modal<?php echo $row['cal_id'] & $row['sem']?>"><span class="glyphicon glyphicon-edit"></span>Update</button>
+                <button name="update2" class="btn btn-primary" style="background-color:green" data-toggle="modal" type="button"           data-target="#update_modal<?php echo $row['cal_id'] ?>"><span class="glyphicon glyphicon-edit"></span>Update</button>
                 </div>
                 </div>
                 </td>
@@ -179,7 +179,7 @@
                 <td style="font-size: medium;">
                 <div class="col-md-1 mt-2">
                 <div class="form-group pt-2">
-                <button name="update3" class="btn btn-primary" style="background-color:green" data-toggle="modal" type="button"           data-target="#update_modal<?php echo $row['cal_id'] & $row['sem']?>"><span class="glyphicon glyphicon-edit"></span>Update</button>
+                <button name="update3" class="btn btn-primary" style="background-color:green" data-toggle="modal" type="button"           data-target="#update_modal<?php echo $row['cal_id'] ?>"><span class="glyphicon glyphicon-edit"></span>Update</button>
                 </div>
                 </div>
                 </td>
