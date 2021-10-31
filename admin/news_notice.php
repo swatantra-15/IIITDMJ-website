@@ -114,7 +114,7 @@
                 <td style="font-size: medium;">
                 <div class="col-md-1 mt-2">
                 <div class="form-group pt-2">
-                <button name="del" class="btn btn-primary" style="background-color:red"><a href="delete_function.php?event_id=' . $row['id'] . ' " style="color:white; text-decoration:none"> Delete</a></button>
+                <button name="del" class="btn btn-primary" style="background-color:red"><a href="delete_function.php?event_id=' . $row['id'] . ' " style="color:white; text-decoration:none" onclick="return checkdelete()"> Delete</a></button>
                 </div>
                 </div>
                 </td>
@@ -124,6 +124,7 @@
                 </table>';
                 ?>
     </div>
+    <script src="js/deleteprompt.js"></script>
     <?php 
        include('includes/script.php');
        include('includes/footer.php');

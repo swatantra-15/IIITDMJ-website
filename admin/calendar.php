@@ -101,16 +101,12 @@
             </thead>
             <tbody>
                 <?php
-                $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
-                /*Check link to the mysql server*/
-                if (!$link) {
-                    die('Failed to connect to server: ');
-                }
+                include_once 'includes/connect.php';
                 /*Create query*/
                 $qry = 'SELECT * FROM acad_calendar WHERE sem="1"';
 
                 /*Execute query*/
-                $result = mysqli_query($link, $qry);
+                $result = mysqli_query($con, $qry);
 
                 /*Show the rows in the fetched result set one by one*/
                 while ($row = mysqli_fetch_assoc($result)) {
@@ -136,13 +132,9 @@
                     <th colspan="5" style="color: red;">Semester 2 </th>
                 </tr>
                 <?php
-                $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
-                /*Check link to the mysql server*/
-                if (!$link) {
-                    die('Failed to connect to server: ');
-                }
+                include_once 'includes/connect.php';
                 $qry2 = 'SELECT * FROM acad_calendar WHERE sem="2"';
-                $nextresult = mysqli_query($link, $qry2);
+                $nextresult = mysqli_query($con, $qry2);
                 while ($row = mysqli_fetch_assoc($nextresult)) {
                 ?>
                     <tr>
@@ -166,13 +158,9 @@
                     <th colspan="5" style="color: red;">Summer Semester </th>
                 </tr>
                 <?php
-                $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
-                /*Check link to the mysql server*/
-                if (!$link) {
-                    die('Failed to connect to server: ');
-                }
+                include_once 'includes/connect.php';
                 $qry3 = 'SELECT * FROM acad_calendar WHERE sem="sum"';
-                $sumresult = mysqli_query($link, $qry3);
+                $sumresult = mysqli_query($con, $qry3);
                 while ($row = mysqli_fetch_assoc($sumresult)) {
                 ?>
                     <tr>

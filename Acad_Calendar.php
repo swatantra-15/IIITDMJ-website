@@ -25,8 +25,8 @@
     </div>
     <div id="block" class="container" style="padding: 0.8rem;width:95%">
         <div class="container" style="text-align: center;">
-        <i class="fa fa-calendar" style="font-size: x-large;"></i>
-            <h1>Academic Calendar for Session 2021-22</h1>
+            <i class="fa fa-calendar" style="font-size: x-large;"></i>
+            <h1>Academic Calendar for Session <?php echo date('Y') ?><?php echo - (date('y') + 1) ?></h1>
         </div>
         <br>
         <table class="table table-bordered  text-center " style="margin:auto; margin-bottom: 20px;">
@@ -35,7 +35,7 @@
                     <th></th>
                     <th> Event </th>
                     <th> Old UG+PG </th>
-                    <th> New Pg M.Tech +Mdes+Ph.D(2021 Batch)</th>
+                    <th> New Pg M.Tech +Mdes+Ph.D(<?php echo date('Y') ?> Batch)</th>
                 </tr>
                 <tr>
                     <th colspan="4" style="color: red;">Semester 1 </th>
@@ -67,9 +67,9 @@
                 echo '<tr>
                 <th colspan="4" style="color: red;">Semester 2 </th>
             </tr>';
-                $qry2= 'SELECT * FROM acad_calendar WHERE sem="2"';
-                $nextresult=mysqli_query($link,$qry2);
-                while ($row=mysqli_fetch_assoc($nextresult)) {
+                $qry2 = 'SELECT * FROM acad_calendar WHERE sem="2"';
+                $nextresult = mysqli_query($link, $qry2);
+                while ($row = mysqli_fetch_assoc($nextresult)) {
                     echo
                     '<tr> 
           <td style="font-size: medium">' . $row['cal_id'] . '</td>
@@ -81,9 +81,9 @@
                 echo '<tr>
                 <th colspan="4" style="color: red;">Summer Semester </th>
                 </tr>';
-                $qry3= 'SELECT * FROM acad_calendar WHERE sem="sum"';
-                $sumresult=mysqli_query($link,$qry3);
-                while ($row=mysqli_fetch_assoc($sumresult)) {
+                $qry3 = 'SELECT * FROM acad_calendar WHERE sem="sum"';
+                $sumresult = mysqli_query($link, $qry3);
+                while ($row = mysqli_fetch_assoc($sumresult)) {
                     echo
                     '<tr> 
           <td style="font-size: medium">' . $row['cal_id'] . '</td>
