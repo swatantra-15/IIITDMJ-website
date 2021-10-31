@@ -6,7 +6,7 @@ include('includes/navbar.php');
 <?php
 include_once 'includes/connect.php';
 if (isset($_POST['addFacultybtn'])) {
-       $employee_name = $_POST["dean_name"];
+       $employee_name = $_POST["employee_name"];
        $department_name = $_POST["department_name"];
        $designation = $_POST["designation"];
        $query = "INSERT INTO dean_info(Employee_Name,department_name,Designation) VALUES ('$employee_name','$department_name','$designation')";
@@ -20,8 +20,8 @@ if (isset($_POST['addFacultybtn'])) {
        <h3 class="text-center">Add Dean Staff</h3>
        <form action="" method="POST" enctype="multipart/form-data">
               <div class="form-group">
-                     <lable for="dean_name">Name</lable>
-                     <input type="text" class="form-control" id="dean_name" name="dean_name" required>
+                     <lable for="employee_name">Name</lable>
+                     <input type="text" class="form-control" id="employee_name" name="employee_name" required>
               </div>
               <div class="form-group">
                      <lable for="department_name">Department Name</lable>
