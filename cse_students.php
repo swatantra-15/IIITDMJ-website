@@ -25,6 +25,7 @@
     <table class="table table-bordered  text-center " style="margin:auto; margin-bottom: 20px;">
       <thead>
         <tr>
+          <th> Image </th>
           <th> Student_name </th>
           <th> Programme </th>
           <th> Email </th>
@@ -46,13 +47,14 @@
         /*Show the rows in the fetched result set one by one*/
         while ($row = mysqli_fetch_assoc($result)) {
           echo '<tr> 
+          <td><img src="data:image/jpeg;base64,'.base64_encode($row['Student_image']).'" alt="" class="rounded-circle" width="90" style="padding:5px; border:0.6px solid"></td>
           <td>' . $row['name'] . '</td>
           <td>' . $row['programme'] . '</td>
           <td>' . $row['email'] . '</td> 
           </tr>';
         }
         echo '</tbody>     
-    </table>';
+        </table>';
         ?>
   </div>
   <div id="block" class="container" style="padding: 0.8rem;">
@@ -62,6 +64,7 @@
     <table class="table table-bordered  text-center " style="margin:auto; margin-bottom: 20px;">
       <thead>
         <tr>
+          <th> Image </th>
           <th> Student_name </th>
           <th> Programme</th>
           <th> Email </th>
@@ -76,13 +79,14 @@
         }
         /*Create query*/
         $qry = 'SELECT * FROM students WHERE Programme="M.tech" AND discipline="CSE" ORDER BY name';
-
+        
         /*Execute query*/
         $result = mysqli_query($link, $qry);
-
+        
         /*Show the rows in the fetched result set one by one*/
         while ($row = mysqli_fetch_assoc($result)) {
           echo '<tr> 
+          <td><img src="data:image/jpeg;base64,'.base64_encode($row['Student_image']).'" alt="" class="rounded-circle" width="90" style="padding:5px; border:0.6px solid"></td>
           <td>' . $row['name'] . '</td> 
           <td>' . $row['programme'] . '</td> 
           <td>' . $row['email'] . '</td> 

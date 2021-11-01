@@ -16,10 +16,9 @@ include('includes/navbar.php');
                     <th scope="col">Department Name</th>
                     <th scope="col">Designation</th>
                     <th scope="col">Action</th>
-
                 </tr>
             </thead>
-            </tbody>
+            <tbody>
             <?php
             include_once 'includes/connect.php';
             /*Create query*/
@@ -55,13 +54,8 @@ include('includes/navbar.php');
 <div>
     <a class="btn btn-danger box" href="addEmployee.php" style="  position: fixed; bottom: 10px; right: 20px; margin-bottom: 30px;">
         <i class="fas fa-plus fa-2x"></i>
-
     </a>
-
 </div>
-
-
-
 
 <?php
 include('includes/script.php');

@@ -4,8 +4,8 @@
        
  ?>
 
- <div class="col-sm-6 mt-5 mx-3 jumbotron">
-        <h3 class="tect center">New Student</h3>
+ <div class="col-sm-11 mt-5 mx-3 jumbotron">
+        <h3 class="text-center">New Student</h3>
        <form action="" method="POST" enctype="multipart/form-data">
        <div class="form-group">
               <lable for="student_id">Roll Number</lable>
@@ -20,15 +20,15 @@
               <input type="varchar" class="form-control" id="programme" name="programme">
        </div>
        <div class="form-group">
-              <lable for="dicipline">Dicipline</lable>
+              <lable for="dicipline">Discipline</lable>
               <input type="text" class="form-control" id="dicipline" name="dicipline">
        </div>
        <div class="form-group">
-              <lable for="subdicipline">Sub Dicipline</lable>
+              <lable for="subdicipline">Sub Discipline</lable>
               <input type="text" class="form-control" id="subdicipline" name="subdicipline">
        </div>
        <div class="form-group">
-              <lable for="email">Year of Complition</lable>
+              <lable for="email">Addmission Year</lable>
               <input type="year" class="form-control" id="email" name="email">
        <div class="form-group">
               <lable for="email">Email</lable>

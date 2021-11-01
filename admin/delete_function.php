@@ -27,3 +27,18 @@ if (isset($_GET['e_id'])) {
     }
 }
 ?>
+<!-- Delete function for Students -->
+<?php
+include_once "includes/connect.php";
+if (isset($_GET['roll'])) {
+    $roll_number = $_GET['roll'];
+    $query3 = "DELETE FROM students WHERE roll_number='$roll_number'";
+    $result = mysqli_query($con, $query3);
+    if ($result) {
+        header('Location: students.php');
+    }
+    else {
+        echo "<font color='red'>Record not Deleted</font>";
+    }
+}
+?>
