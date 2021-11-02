@@ -141,12 +141,13 @@
                         <div class="col-4">
                             <div class="card" style="margin-left: auto; margin-bottom: auto;">
                                 <div class="card-body"
-                                    style="border: 1px solid; padding: 10px; box-shadow: 5px 10px 8px #888888;">
+                                    style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
                                         <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
                                             <h3>'.$row['name'].'</h3>
                                             <p class="text-secondary mb-2">'.$row['Designation'].'</p>
+                                            <h6>'.$row['Discipline'].'</h6>
                                             <p class="text-muted font-size-sm">'.$row['faculty_description'].'</p>
                                             <button class="btn btn-primary">Profile</button>
                                         </div>
@@ -181,9 +182,9 @@
                         <div class="col-4">
                             <div class="card" style="margin-left: auto; margin-bottom: 1rem; margin-top:1rem;">
                                 <div class="card-body"
-                                    style="border: 1px solid; padding: 10px; box-shadow: 5px 10px 8px #888888;">
+                                    style=" padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                        <img src="'.$row['image'].'" alt="" class="rounded-circle" width="150">
+                                    <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
                                             <h3>'.$row['name'].'</h3>
                                             <p class="text-secondary mb-2">'.$row['Designation'].'</p>
@@ -221,9 +222,9 @@
                         <div class="col-4">
                             <div class="card" style="margin-left: auto; margin-bottom: auto;">
                                 <div class="card-body"
-                                    style="border: 1px solid; padding: 10px; box-shadow: 5px 10px 8px #888888;">
+                                    style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                        <img src="'.$row['image'].'" alt="" class="rounded-circle" width="150">
+                                    <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
                                             <h3>'.$row['name'].'</h3>
                                             <p class="text-secondary mb-2">'.$row['Designation'].'</p>
@@ -260,9 +261,9 @@
                         <div class="col-4">
                             <div class="card" style="margin-left: auto; margin-bottom: auto;">
                                 <div class="card-body"
-                                    style="border: 1px solid; padding: 10px; box-shadow: 5px 10px 8px #888888;">
+                                    style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                        <img src="'.$row['image'].'" alt="" class="rounded-circle" width="150">
+                                    <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
                                             <h3>'.$row['name'].'</h3>
                                             <p class="text-secondary mb-2">'.$row['Designation'].'</p>
@@ -300,9 +301,9 @@
                         <div class="col-4">
                             <div class="card" style="margin-left: auto; margin-bottom: auto;">
                                 <div class="card-body"
-                                    style="border: 1px solid; padding: 10px; box-shadow: 5px 10px 8px #888888;">
+                                    style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                        <img src="'.$row['image'].'" alt="" class="rounded-circle" width="150">
+                                    <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
                                             <h3>'.$row['name'].'</h3>
                                             <p class="text-secondary mb-2">'.$row['Designation'].'</p>
@@ -340,9 +341,9 @@
                         <div class="col-4">
                             <div class="card" style="margin-left: auto; margin-bottom: auto;">
                                 <div class="card-body"
-                                    style="border: 1px solid; padding: 10px; box-shadow: 5px 10px 8px #888888;">
+                                    style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                        <img src="'.$row['image'].'" alt="" class="rounded-circle" width="150">
+                                    <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
                                             <h3>'.$row['name'].'</h3>
                                             <p class="text-secondary mb-2">'.$row['Designation'].'</p>

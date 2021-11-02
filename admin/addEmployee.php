@@ -12,13 +12,13 @@ if (isset($_POST['addFacultybtn'])) {
        $query = "INSERT INTO dean_info(Employee_Name,department_name,Designation) VALUES ('$employee_name','$department_name','$designation')";
        $run = mysqli_query($con, $query);
        if (!$run) {
-              echo "Data not Inserted";
+              echo "Data Not Inserted";
        }
 }
 ?>
-<div class="col-sm-10 mt-5 mx-3 jumbotron">
+<div class="col-sm-6 mt-5 mx-3 jumbotron">
        <h3 class="text-center">Add Dean Staff</h3>
-       <form action="" method="POST" enctype="multipart/form-data">
+       <form action="" method="POST" enctype="multipart/form-data" onsubmit="addnewdata()">
               <div class="form-group">
                      <lable for="employee_name">Name</lable>
                      <input type="text" class="form-control" id="employee_name" name="employee_name" required>
@@ -35,10 +35,10 @@ if (isset($_POST['addFacultybtn'])) {
               </div>
               <div class="form-group">
                      <lable for="designation">Designation</lable>
-                     <textarea class="form-control" id="designation" name="designation"></textarea>
+                     <textarea class="form-control" id="designation" name="designation" required></textarea>
               </div>
               <div class="text-center">
-                     <button type="submit" class="btn btn-primary" id="addFacultybtn" name="addFacultybtn" onclick="addnewdata()">
+                     <button type="submit" class="btn btn-primary" id="addFacultybtn" name="addFacultybtn">
                             Add
                      </button>
                      <button type="button" class="btn btn-light">
@@ -52,7 +52,8 @@ if (isset($_POST['addFacultybtn'])) {
                      if (ask) {
                             window.alert("This post was successfully added.");
                             window.open("http://localhost/ygc/IIITDMJ-website/admin/dean_info.php")
-                            window.location.reload();
+                     } else {
+                            event.preventDefault();
                      }
               }
        </script>

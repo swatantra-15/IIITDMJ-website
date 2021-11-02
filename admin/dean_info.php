@@ -37,7 +37,7 @@ include('includes/navbar.php');
                     <td style="font-size: medium;">
                         <div class="col-md-1 mt-2">
                             <div class="form-group pt-2">
-                                <button name="del" class="btn btn-primary" style="background-color:red" dtype="button"><a href="delete_function.php?e_id=<?php echo $row['E_id'] ?>" style="color:white; text-decoration:none" onclick="return checkdelete()"><span class="glyphicon glyphicon-edit"></span>Delete</a></button>
+                                <button name="del" class="btn btn-primary" style="background-color:red" dtype="button"><a href="delete_function.php?e_id=<?php echo $row['E_id'] ?>" style="color:white; text-decoration:none" onclick="return checkdelete()"><span class="glyphicon glyphicon-edit"></span><i class="fas fa-trash-alt"></i></a></button>
                             </div>
                         </div>
                     </td>
