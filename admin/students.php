@@ -32,7 +32,7 @@ include('includes/navbar.php');
 
                 /*Show the rows in the fetched result set one by one*/
                 while ($row = mysqli_fetch_assoc($result)) {
-                ?>
+                    ?>
                     <tr>
                         <td style="font-size: medium; color:black; border:10px light"><?php echo $row['roll_number'] ?></td>
                         <?php echo '<td><img src="data:image/jpeg;base64,' . base64_encode($row['Student_image']) . '" alt="" class="rounded-circle" width="90" style="padding:5px; border:0.6px solid"></td>' ?>
@@ -41,7 +41,7 @@ include('includes/navbar.php');
                         <td style="font-size: medium; color:black; border:10px light"><?php echo $row['email'] ?></td>
                         <td style="font-size: medium;">
                             <div class="btn-group">
-                                <button type="submit" class="btn btn-info mr-3" name="view" value="view">
+                                <button type="button" class="btn btn-info mr-3" name="view" value="view" data-toggle="modal" type="button" data-target=" #view_modal<?php echo $row['roll_number'] ?>">
                                     <i class="fas fa-address-card"></i>
                                 </button>
                                 <button name="del" class="btn btn-primary" style="background-color:red" dtype="button"><a href="delete_function.php?roll=<?php echo $row['roll_number'] ?>" style="color:white; text-decoration:none" onclick="return checkdelete()"><span class="glyphicon glyphicon-edit"></span><i class="fas fa-trash-alt"></i></a></button>
@@ -49,6 +49,7 @@ include('includes/navbar.php');
                         </td>
                     </tr>
                 <?php
+                    include 'student_view.php';
                 }
                 ?>
             </tbody>
