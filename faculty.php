@@ -3,8 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <style>
         body {
             font-family: Arial;
@@ -124,31 +123,31 @@
 
     <div id="All" class="tabcontent">
         <div>
-        <div style="margin: 0 1rem; ">
-<div class="row">
+            <div style="margin: 0 1rem; ">
+                <div class="row">
                     <?php
-                $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
-                if (!$link) {
-                    die('Failed to connect to server: ');
-                }
-                $qry = 'SELECT * FROM faculty';
+                    $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
+                    if (!$link) {
+                        die('Failed to connect to server: ');
+                    }
+                    $qry = 'SELECT * FROM faculty';
 
-                $result = mysqli_query($link, $qry);
+                    $result = mysqli_query($link, $qry);
 
-                if ($result!= false) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        echo '
+                    if ($result != false) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo '
                         <div class="col-4">
                             <div class="card" style="margin-left: auto; margin-bottom: auto;">
                                 <div class="card-body"
                                     style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                        <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
+                                        <img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
-                                            <h3>'.$row['name'].'</h3>
-                                            <p class="text-secondary mb-2">'.$row['Designation'].'</p>
-                                            <h6>'.$row['Discipline'].'</h6>
-                                            <p class="text-muted font-size-sm">'.$row['faculty_description'].'</p>
+                                            <h3>' . $row['name'] . '</h3>
+                                            <p class="text-secondary mb-2">' . $row['Designation'] . '</p>
+                                            <h6>' . $row['Discipline'] . '</h6>
+                                            <p class="text-muted font-size-sm">' . $row['faculty_description'] . '</p>
                                             <button class="btn btn-primary">Profile</button>
                                         </div>
                                     </div>
@@ -156,18 +155,18 @@
                             </div>
                         </div>
                         ';
+                        }
                     }
-                }
-            ?>
-</div>
-</div>
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="CSE" class="tabcontent">
-    <div style="margin: 0 1rem; ">
-<div class="row">
-                    <?php
+        <div style="margin: 0 1rem; ">
+            <div class="row">
+                <?php
                 $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
                 if (!$link) {
                     die('Failed to connect to server: ');
@@ -176,7 +175,7 @@
 
                 $result = mysqli_query($link, $qry);
 
-                if ($result!= false) {
+                if ($result != false) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '
                         <div class="col-4">
@@ -184,11 +183,11 @@
                                 <div class="card-body"
                                     style=" padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                    <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
+                                    <img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
-                                            <h3>'.$row['name'].'</h3>
-                                            <p class="text-secondary mb-2">'.$row['Designation'].'</p>
-                                            <p class="text-muted font-size-sm">'.$row['faculty_description'].'</p>
+                                            <h3>' . $row['name'] . '</h3>
+                                            <p class="text-secondary mb-2">' . $row['Designation'] . '</p>
+                                            <p class="text-muted font-size-sm">' . $row['faculty_description'] . '</p>
                                             <button class="btn btn-primary">Profile</button>
                                         </div>
                                     </div>
@@ -198,16 +197,16 @@
                         ';
                     }
                 }
-            ?>
-</div>
-</div>
-        
+                ?>
+            </div>
+        </div>
+
     </div>
 
     <div id="Design" class="tabcontent">
-    <div style="margin: 0 1rem; ">
-<div class="row">
-                    <?php
+        <div style="margin: 0 1rem; ">
+            <div class="row">
+                <?php
                 $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
                 if (!$link) {
                     die('Failed to connect to server: ');
@@ -216,7 +215,7 @@
 
                 $result = mysqli_query($link, $qry);
 
-                if ($result!= false) {
+                if ($result != false) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '
                         <div class="col-4">
@@ -224,11 +223,11 @@
                                 <div class="card-body"
                                     style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                    <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
+                                    <img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
-                                            <h3>'.$row['name'].'</h3>
-                                            <p class="text-secondary mb-2">'.$row['Designation'].'</p>
-                                            <p class="text-muted font-size-sm">'.$row['faculty_description'].'</p>
+                                            <h3>' . $row['name'] . '</h3>
+                                            <p class="text-secondary mb-2">' . $row['Designation'] . '</p>
+                                            <p class="text-muted font-size-sm">' . $row['faculty_description'] . '</p>
                                             <button class="btn btn-primary">Profile</button>
                                         </div>
                                     </div>
@@ -238,15 +237,15 @@
                         ';
                     }
                 }
-            ?>
-</div>
-</div>
-        
+                ?>
+            </div>
+        </div>
+
     </div>
     <div id="ECE" class="tabcontent">
-    <div style="margin: 0 1rem; ">
-<div class="row">
-                    <?php
+        <div style="margin: 0 1rem; ">
+            <div class="row">
+                <?php
                 $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
                 if (!$link) {
                     die('Failed to connect to server: ');
@@ -255,7 +254,7 @@
 
                 $result = mysqli_query($link, $qry);
 
-                if ($result!= false) {
+                if ($result != false) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '
                         <div class="col-4">
@@ -263,11 +262,11 @@
                                 <div class="card-body"
                                     style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                    <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
+                                    <img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
-                                            <h3>'.$row['name'].'</h3>
-                                            <p class="text-secondary mb-2">'.$row['Designation'].'</p>
-                                            <p class="text-muted font-size-sm">'.$row['faculty_description'].'</p>
+                                            <h3>' . $row['name'] . '</h3>
+                                            <p class="text-secondary mb-2">' . $row['Designation'] . '</p>
+                                            <p class="text-muted font-size-sm">' . $row['faculty_description'] . '</p>
                                             <button class="btn btn-primary">Profile</button>
                                         </div>
                                     </div>
@@ -277,16 +276,16 @@
                         ';
                     }
                 }
-            ?>
-</div>
-</div>
-        
+                ?>
+            </div>
+        </div>
+
     </div>
 
     <div id="ME" class="tabcontent">
-    <div style="margin: 0 1rem; ">
-<div class="row">
-                    <?php
+        <div style="margin: 0 1rem; ">
+            <div class="row">
+                <?php
                 $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
                 if (!$link) {
                     die('Failed to connect to server: ');
@@ -295,7 +294,7 @@
 
                 $result = mysqli_query($link, $qry);
 
-                if ($result!= false) {
+                if ($result != false) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '
                         <div class="col-4">
@@ -303,11 +302,11 @@
                                 <div class="card-body"
                                     style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                    <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
+                                    <img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
-                                            <h3>'.$row['name'].'</h3>
-                                            <p class="text-secondary mb-2">'.$row['Designation'].'</p>
-                                            <p class="text-muted font-size-sm">'.$row['faculty_description'].'</p>
+                                            <h3>' . $row['name'] . '</h3>
+                                            <p class="text-secondary mb-2">' . $row['Designation'] . '</p>
+                                            <p class="text-muted font-size-sm">' . $row['faculty_description'] . '</p>
                                             <button class="btn btn-primary">Profile</button>
                                         </div>
                                     </div>
@@ -317,16 +316,16 @@
                         ';
                     }
                 }
-            ?>
-</div>
-</div>
-        
+                ?>
+            </div>
+        </div>
+
     </div>
 
     <div id="Natural Science" class="tabcontent">
-    <div style="margin: 0 1rem; ">
-<div class="row">
-                    <?php
+        <div style="margin: 0 1rem; ">
+            <div class="row">
+                <?php
                 $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
                 if (!$link) {
                     die('Failed to connect to server: ');
@@ -335,7 +334,7 @@
 
                 $result = mysqli_query($link, $qry);
 
-                if ($result!= false) {
+                if ($result != false) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '
                         <div class="col-4">
@@ -343,11 +342,11 @@
                                 <div class="card-body"
                                     style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                    <img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150">
+                                    <img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '" alt="" class="rounded-circle" width="150">
                                         <div class="mt-3">
-                                            <h3>'.$row['name'].'</h3>
-                                            <p class="text-secondary mb-2">'.$row['Designation'].'</p>
-                                            <p class="text-muted font-size-sm">'.$row['faculty_description'].'</p>
+                                            <h3>' . $row['name'] . '</h3>
+                                            <p class="text-secondary mb-2">' . $row['Designation'] . '</p>
+                                            <p class="text-muted font-size-sm">' . $row['faculty_description'] . '</p>
                                             <button class="btn btn-primary">Profile</button>
                                         </div>
                                     </div>
@@ -357,10 +356,10 @@
                         ';
                     }
                 }
-            ?>
-</div>
-</div>
-        
+                ?>
+            </div>
+        </div>
+
     </div>
 
     <script>
@@ -380,9 +379,7 @@
         document.getElementById("defaultOpen").click();
     </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -42,3 +42,18 @@ if (isset($_GET['roll'])) {
     }
 }
 ?>
+<!-- Delete function for faculty -->
+<?php
+include_once "includes/connect.php";
+if (isset($_GET['faculty_id'])) {
+    $faculty_id = $_GET['faculty_id'];
+    $query4 = "DELETE FROM faculty WHERE faculty_id='$faculty_id'";
+    $result = mysqli_query($con, $query4);
+    if ($result) {
+        header('Location: faculty.php');
+    }
+    else {
+        echo "<font color='red'>Record not Deleted</font>";
+    }
+}
+?>
