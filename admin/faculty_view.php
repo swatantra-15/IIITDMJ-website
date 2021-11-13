@@ -22,9 +22,10 @@
 				</div>
 				<div style="clear:both;"></div>
 				<div class="modal-footer">
-                    <button name="update" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Edit</button>
+                    <button name="update" class="btn btn-warning" data-toggle="modal" type="button" data-target="#update_modal<?php echo $row['faculty_id']?>"><span class="glyphicon glyphicon-edit"></span> Edit</button>
 					<button class="btn btn-danger" type="button" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Close</button>
 				</div>
+                <?php include 'edit_faculty.php'?>
 				</div>
 			</form>
             
