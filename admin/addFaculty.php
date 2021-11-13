@@ -29,7 +29,7 @@ if (isset($_POST['addfacultybtn'])) {
                      <input type="file" name="faculty_image">
               </div>
               <div class="form-group">
-                     <label for="faculty_id">Faculty ID</label>
+                     <label for="faculty_id">Faculty ID(like: YSK_101)</label>
                      <input type="varchar" class="form-control" id="faculty_id" name="faculty_id" required>
               </div>
               <div class="form-group">

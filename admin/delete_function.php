@@ -57,3 +57,18 @@ if (isset($_GET['faculty_id'])) {
     }
 }
 ?>
+<!-- Delete function for General Staff -->
+<?php
+include_once "includes/connect.php";
+if (isset($_GET['staff_id'])) {
+    $staff_id = $_GET['staff_id'];
+    $query5 = "DELETE FROM people WHERE registration_id='$staff_id'";
+    $result = mysqli_query($con, $query5);
+    if ($result) {
+        header('Location: gen_staff.php');
+    }
+    else {
+        echo "<font color='red'>Record not Deleted</font>";
+    }
+}
+?>

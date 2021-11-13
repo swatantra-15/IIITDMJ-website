@@ -6,7 +6,7 @@
 <div class="col-sm-9 mt-5">
     <!--Table-->
 <div class="bg-light text-dark p-2">
-    <p><h4>List of Depatments</h4></p>
+    <p><h4>List of Departments</h4></p>
 <table class="table" >
     <thead>
         <tr>

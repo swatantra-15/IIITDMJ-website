@@ -33,7 +33,7 @@
                     <a href="faculty.php">Faculty</a>
                     <a href="dean.php">Deans</a>
                     <a href="student.php">Enrolled Students</a>
-                    <a href="#">Staff</a>
+                    <a href="people_staff.php">Staff</a>
                 </div>
             </li>
             <li>

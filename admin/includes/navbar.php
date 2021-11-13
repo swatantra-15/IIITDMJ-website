@@ -79,6 +79,11 @@
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Departments</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gen_staff.php">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>General Staff</span></a>
+            </li>
 
            
 
