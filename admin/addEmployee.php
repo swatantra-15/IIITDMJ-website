@@ -5,14 +5,14 @@ include('includes/navbar.php');
 ?>
 <?php
 include_once 'includes/connect.php';
-if (isset($_POST['addFacultybtn'])) {
+if (isset($_POST['addemployeebtn'])) {
        $employee_name = $_POST["employee_name"];
        $department_name = $_POST["department_name"];
        $designation = $_POST["designation"];
        $query = "INSERT INTO dean_info(Employee_Name,department_name,Designation) VALUES ('$employee_name','$department_name','$designation')";
        $run = mysqli_query($con, $query);
        if (!$run) {
-              echo "Data Not Inserted";
+              echo "Data Not Inserted ".mysqli_error($con);
        }
 }
 ?>
@@ -38,7 +38,7 @@ if (isset($_POST['addFacultybtn'])) {
                      <textarea class="form-control" id="designation" name="designation" required></textarea>
               </div>
               <div class="text-center">
-                     <button type="submit" class="btn btn-primary" id="addFacultybtn" name="addFacultybtn">
+                     <button type="submit" class="btn btn-primary" id="addemployeebtn" name="addemployeebtn">
                             Add
                      </button>
                      <button type="button" class="btn btn-light">
