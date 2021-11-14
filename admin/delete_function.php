@@ -72,3 +72,18 @@ if (isset($_GET['staff_id'])) {
     }
 }
 ?>
+<!-- Delete function for Dean -->
+<?php
+include_once "includes/connect.php";
+if (isset($_GET['dean_id'])) {
+    $dean_id = $_GET['dean_id'];
+    $query6 = "DELETE FROM dean WHERE dean_id='$dean_id'";
+    $result = mysqli_query($con, $query6);
+    if ($result) {
+        header('Location: dean.php');
+    }
+    else {
+        echo "<font color='red'>Record not Deleted</font>";
+    }
+}
+?>
