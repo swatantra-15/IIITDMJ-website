@@ -98,6 +98,7 @@
                                                 <h3>Name</h3>
                                                 <p class="text-secondary mb-2">Designation</p>
                                                 <p class="text-muted font-size-sm">Discipline</p>
+                                                <p class="text-muted font-size-sm">Email</p>
                                             </div>
                                         </div>
                                     </div>
@@ -109,7 +110,7 @@
                                     die('Failed to connect to server: ');
                                 }
                                 /*Create query*/
-                                $qry = 'SELECT * FROM `faculty` WHERE Discipline="CSE";';
+                                $qry = 'SELECT * FROM `faculty` WHERE Discipline="CSE" AND Designation="Professor"';
 
                                 /*Execute query*/
                                 $result = mysqli_query($link, $qry);
@@ -125,6 +126,8 @@
                                                 <h3><?php echo $row['name']?></h3>
                                                 <p class="text-secondary mb-2"><?php echo $row['Designation']?></p>
                                                 <p class="text-muted font-size-sm"><?php echo $row['Discipline']?></p>
+                                                <p class="text-muted font-size-sm"><?php echo $row['email']?></p>
+                                                <a href="faculty.php">More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -159,7 +162,7 @@
                         $stat = $dbh->prepare("SELECT * from news_events WHERE Place='CSE' AND scope='Notice'");
                         $stat->execute();
                         while ($row = $stat->fetch()) {
-                            echo "<img src='stylesheets/images/new.gif'> <a target='_blank' style='color:red' href='admin/pdf/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
+                            echo "<img src='stylesheets/images/new.gif'> <a target='_blank' style='color:red' href='admin/data/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
                         }
                         ?>
                     </p>
@@ -173,7 +176,7 @@
                         $stat = $dbh->prepare("SELECT * from news_events WHERE Place='CSE' AND scope='News'");
                         $stat->execute();
                         while ($row = $stat->fetch()) {
-                            echo "<img src='stylesheets/images/new.gif'> <a target='_blank' style='color:red' href='admin/pdf/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
+                            echo "<img src='stylesheets/images/new.gif'> <a target='_blank' style='color:red' href='admin/data/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
                         }
                         ?>
                     </p>
@@ -184,9 +187,9 @@
                 <h4 style="color:#000000;">Links</h4>
                 <ul class="list_1">
                     <li><a href="index.php">IIITDMJ HOME</a></li>
-                    <li><a href="#" target="_blank">Academic Calender</a></li>
+                    <li><a href="Acad_Calendar.php">Academic Calender</a></li>
                     <li><a href="downloads/Closed Holiday 2021.pdf" target="_blank">Holidays 2021</a></li>
-                    <li><a href="http://faculty.iiitdmj.ac.in/faculty/prabin16" target="_blank">Dean</a></li>
+                    <li><a href="Students_dean.php">Dean</a></li>
                     <li><a href="cse_students.php">Students</a></li>
                 </ul>
             </div>

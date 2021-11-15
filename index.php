@@ -38,7 +38,7 @@
                 $stat = $dbh->prepare("SELECT * from news_events WHERE Place='All' AND scope='Notice'");
                 $stat->execute();
                 while ($row = $stat->fetch()) {
-                    echo "<img src='stylesheets/images/new.gif'><a target='_blank' style='color:red; padding:10px' href='admin/pdf/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
+                    echo "<img src='stylesheets/images/new.gif'><a target='_blank' style='color:red; padding:10px' href='admin/data/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
                 }
                 ?>
             </p>
@@ -52,7 +52,7 @@
                 $stat = $dbh->prepare("SELECT * from news_events WHERE Place='All' AND scope='News'");
                 $stat->execute();
                 while ($row = $stat->fetch()) {
-                    echo "<img src='stylesheets/images/new.gif'><a target='_blank' style='color:red; padding:10px' href='admin/pdf/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
+                    echo "<img src='stylesheets/images/new.gif'><a target='_blank' style='color:red; padding:10px' href='admin/data/view.php?id=" . $row['id'] . "'>" . $row['Name'] . "</a><br>";
                 }
 
                 ?>

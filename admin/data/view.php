@@ -6,4 +6,4 @@ $stat->bindParam(1, $id);
 $stat->execute();
 $row = $stat->fetch();
 header('Content-Type:' . $row['type_of']);
-echo $row['pdf'];
+echo $row['data'];

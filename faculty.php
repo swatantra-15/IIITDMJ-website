@@ -137,8 +137,8 @@
                     if ($result != false) {
                         while ($row = mysqli_fetch_assoc($result)) {
                             echo '
-                        <div class="col-4">
-                            <div class="card" style="margin-left: auto; margin-bottom: auto;">
+                        <div class="col-4 mb-4">
+                            <div class="card h-100" style="margin-left: auto; margin-bottom: auto;">
                                 <div class="card-body"
                                     style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
@@ -178,8 +178,8 @@
                 if ($result != false) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '
-                        <div class="col-4">
-                            <div class="card" style="margin-left: auto; margin-bottom: 1rem; margin-top:1rem;">
+                        <div class="col-4 mb-4">
+                            <div class="card h-100" style="margin-left: auto; margin-bottom: 1rem; margin-top:1rem;">
                                 <div class="card-body"
                                     style=" padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
@@ -218,8 +218,8 @@
                 if ($result != false) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '
-                        <div class="col-4">
-                            <div class="card" style="margin-left: auto; margin-bottom: auto;">
+                        <div class="col-4 mb-4">
+                            <div class="card h-100" style="margin-left: auto; margin-bottom: auto;">
                                 <div class="card-body"
                                     style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
@@ -257,8 +257,8 @@
                 if ($result != false) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '
-                        <div class="col-4">
-                            <div class="card" style="margin-left: auto; margin-bottom: auto;">
+                        <div class="col-4 mb-4">
+                            <div class="card h-100" style="margin-left: auto; margin-bottom: auto;">
                                 <div class="card-body"
                                     style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
@@ -297,8 +297,8 @@
                 if ($result != false) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '
-                        <div class="col-4">
-                            <div class="card" style="margin-left: auto; margin-bottom: auto;">
+                        <div class="col-4 mb-4">
+                            <div class="card h-100" style="margin-left: auto; margin-bottom: auto;">
                                 <div class="card-body"
                                     style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
@@ -337,8 +337,8 @@
                 if ($result != false) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '
-                        <div class="col-4">
-                            <div class="card" style="margin-left: auto; margin-bottom: auto;">
+                        <div class="col-4 mb-4">
+                            <div class="card h-100" style="margin-left: auto; margin-bottom: auto;">
                                 <div class="card-body"
                                     style="padding: 10px; box-shadow: 5px 10px 8px #888888;">
                                     <div class="d-flex flex-column align-items-center text-center">
