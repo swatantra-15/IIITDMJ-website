@@ -90,47 +90,48 @@
                     <div>
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
+                            <div class="carousel-item active">
                                     <div class="card-body">
                                         <div class="d-flex flex-column align-items-center text-center">
                                             <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="rounded-circle" width="150">
                                             <div class="mt-3">
-                                                <h3>John Doe</h3>
-                                                <p class="text-secondary mb-2">Professor</p>
-                                                <p class="text-muted font-size-sm">Data Structure</p>
-                                                <button class="btn btn-primary">Email</button>
+                                                <h3>Name</h3>
+                                                <p class="text-secondary mb-2">Designation</p>
+                                                <p class="text-muted font-size-sm">Discipline</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            <?php
+                                $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
+                                /*Check link to the mysql server*/
+                                if (!$link) {
+                                    die('Failed to connect to server: ');
+                                }
+                                /*Create query*/
+                                $qry = 'SELECT * FROM `faculty` WHERE Discipline="CSE";';
 
-                                <div class="carousel-item">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column align-items-center text-center">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="rounded-circle" width="150">
-                                            <div class="mt-3">
-                                                <h3>Alex</h3>
-                                                <p class="text-secondary mb-2">Asisstant Professor</p>
-                                                <p class="text-muted font-size-sm">Data Science</p>
-                                                <button class="btn btn-primary">Email</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                /*Execute query*/
+                                $result = mysqli_query($link, $qry);
 
-                                <div class="carousel-item">
+                                /*Show the rows in the fetched result set one by one*/
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    ?>
+                                <div class="carousel-item ">
                                     <div class="card-body">
                                         <div class="d-flex flex-column align-items-center text-center">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="rounded-circle" width="150">
+                                            <?php echo'<img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="" class="rounded-circle" width="150" >'?>
                                             <div class="mt-3">
-                                                <h3>Ronny</h3>
-                                                <p class="text-secondary mb-2">TA</p>
-                                                <p class="text-muted font-size-sm">Data Structure</p>
-                                                <button class="btn btn-primary">Email</button>
+                                                <h3><?php echo $row['name']?></h3>
+                                                <p class="text-secondary mb-2"><?php echo $row['Designation']?></p>
+                                                <p class="text-muted font-size-sm"><?php echo $row['Discipline']?></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <?php
+                                }
+                                ?>
                             </div>
 
                             <!-- Left and right controls -->
