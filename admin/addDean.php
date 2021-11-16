@@ -8,10 +8,10 @@ include 'includes/connect.php';
 if (isset($_POST['adddeanbtn'])) {
        $dean_id = $_POST["dean_id"];
        $dean_name = $_POST["dean_name"];
-       $department_name=$_POST["department_name"];
+       $department_code=$_POST["department_code"];
        $email = $_POST["email"];
        $dean_description = $_POST["description"];
-       $query = "INSERT INTO dean(dean_id,name,department_name,email,description) VALUES ('$dean_id','$dean_name','$department_name','$email','$dean_description')";
+       $query = "INSERT INTO dean(dean_id,name,department_code,email,description) VALUES ('$dean_id','$dean_name','$department_code','$email','$dean_description')";
        $run = mysqli_query($con, $query);
        if (!$run) {
               echo "Data Not Inserted " . mysqli_error($con);
@@ -30,13 +30,13 @@ if (isset($_POST['adddeanbtn'])) {
                      <input type="text" class="form-control" id="dean_name" name="dean_name" required>
               </div>
               <div class="form-group">
-                     <label for="department_name">Department Name</label>
+                     <label for="department_code">Department Name</label>
                      <br>
-                     <select name="department_name" id="department_name">
+                     <select name="department_code" id="department_code">
                             <option>Choose Department</option>
-                            <option value="Academics">Academics</option>
+                            <option value="ACAD">Academics</option>
                             <option value="RSPC">Research</option>
-                            <option value="Students">Students</option>
+                            <option value="STU">Students</option>
                      </select>
               </div>
               <div class="form-group">

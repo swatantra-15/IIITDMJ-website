@@ -28,7 +28,7 @@
             <p style="background-color: aqua;">
                 <?php
                 $link = mysqli_connect('localhost', 'root', '', 'iiitdmj');
-                $result = mysqli_query($link, 'SELECT * FROM dean WHERE department_name="Students"');
+                $result = mysqli_query($link, 'SELECT * FROM dean,department WHERE dean.department_code=department.department_code AND department.department_name="Students"');
                 $row = mysqli_fetch_assoc($result);
                 echo $row['name'];
                 ?><br>

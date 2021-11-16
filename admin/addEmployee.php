@@ -9,7 +9,16 @@ if (isset($_POST['addemployeebtn'])) {
        $employee_name = $_POST["employee_name"];
        $department_name = $_POST["department_name"];
        $designation = $_POST["designation"];
-       $query = "INSERT INTO dean_info(Employee_Name,department_name,Designation) VALUES ('$employee_name','$department_name','$designation')";
+       if ($department_name=="Academics") {
+              $department_code="ACAD";
+       }
+       elseif ($department_name=="Students") {
+              $department_code="STU";
+       }
+       else {
+              $department_code="RSPC";
+       }
+       $query = "INSERT INTO dean_info(Employee_Name,department_code,department_name,Designation) VALUES ('$employee_name','$department_code','$department_name','$designation')";
        $run = mysqli_query($con, $query);
        if (!$run) {
               echo "Data Not Inserted ".mysqli_error($con);

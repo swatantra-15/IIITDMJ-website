@@ -24,7 +24,7 @@ include('includes/navbar.php');
                 <?php
                 include_once 'includes/connect.php';
                 /*Create query*/
-                $qry = 'SELECT * FROM dean';
+                $qry = 'SELECT * FROM dean,department WHERE dean.department_code=department.department_code';
 
                 /*Execute query*/
                 $result = mysqli_query($con, $qry);

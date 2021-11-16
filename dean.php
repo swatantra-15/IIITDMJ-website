@@ -43,7 +43,7 @@
           die('Failed to connect to server: ');
         }
         /*Create query*/
-        $qry = 'SELECT * FROM dean';
+        $qry = 'SELECT * FROM dean,department WHERE dean.department_code=department.department_code';
 
         /*Execute query*/
         $result = mysqli_query($link, $qry);
@@ -53,7 +53,7 @@
           echo
           '<tr> 
           <td>' . $row['name'] . '</td>
-          <td><a href="'.$row['department_name'].'_dean.php" style="color:blue">' . $row['department_name'] . '</a></td>
+          <td><a href="'.$row['department_code'].'_dean.php" style="color:blue">' . $row['department_name'] . '</a></td>
           <td>' . $row['email'] . '</td> 
           <td>' . $row['description'] . '</td>
           </tr>';
