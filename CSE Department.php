@@ -189,7 +189,7 @@
                     <li><a href="index.php">IIITDMJ HOME</a></li>
                     <li><a href="Acad_Calendar.php">Academic Calender</a></li>
                     <li><a href="downloads/Closed Holiday 2021.pdf" target="_blank">Holidays 2021</a></li>
-                    <li><a href="Students_dean.php">Dean</a></li>
+                    <li><a href="dean.php">Dean</a></li>
                     <li><a href="cse_students.php">Students</a></li>
                 </ul>
             </div>
